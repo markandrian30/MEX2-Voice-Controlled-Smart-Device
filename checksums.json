@@ -2,7 +2,7 @@
     ".gitattributes":  "e4642e66e4e3b07572c02f67b549e44602e46d5b8882533c5ce53770d9587c6a",
     ".gitignore":  "b0d4606903ee977338d8cee5d399ca606001fae7eae65026d7f7ce117802bf93",
     "LICENSE":  "dc8ea0dcb90ae26f75ef975c3c1c901f03b58b8ddaab4920e6fadee2b8a17e1a",
-    "README.md":  "45311430c36f85032599951dae71e9ce0c30b34758878995481a4392b10028e0",
+    "README.md":  "895b70efcaa4b750538b766ad7e4265fc0d5fd4b95f2eb5285f0cb25e9e306de",
     "benchmark.py":  "d03360112d18128c41eb93fe4cf9b0cded9ba82d87ba887cc3d5091699100f8d",
     "data/command_manifest.csv":  "ed0db9969aa2b923a46cc5d3580284c7cb3e791aafc49e81b2dd84f959843344",
     "data/crnn4_full_manifest.csv":  "e9302b1d2e3f7031a30e379857175ce7c38e9c3ef09507d1b18d1bd041528920",

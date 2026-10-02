@@ -16,13 +16,20 @@ python main.py
 
 Place your `music/` and `responses/` folders beside `main.py`. Say **Hello Kibo** to start; **Sagittarius** to exit. Enable I²C for the OLED.
 
+## Submission details
+
+| Item | Location / details |
+|---|---|
+| GitHub repository | [markandrian30/vcm-crnn](https://github.com/markandrian30/vcm-crnn) · public · [MIT code licence](LICENSE) |
+| Dataset location | [Hugging Face source](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands) · [Processed command manifest](data/command_manifest.csv) · [Manifest with controls](data/crnn4_full_manifest.csv) · [bestsynth training manifest](reports/training/manifest.csv). Source access terms apply; DOI/licence verification pending. |
+| A100 cluster | DGX2 (`ai-n002`) · 1 × A100-SXM4, 40 GB (GPU 6) · seed 42 · 2.68 GPU-hours reported; wall-clock unverified |
+| Model weights | [bestsynth checkpoint](model/best_model.pt) · provisional; weights licence pending |
+
 ## 1. Model
 
 ![Model and example hardware](docs/Picture1.png)
 
 **CNN + bidirectional GRU:** 128 hidden units per direction, dropout 0.35, 987,873 parameters. The current checkpoint has **33 outputs**: 31 commands + wake/exit (correcting the image’s output count).
-
-[Best model](model/best_model.pt)
 
 ## 2. Dataset
 
@@ -37,7 +44,7 @@ The following **prepared CRNN4 subset** is for the later model update; current b
 | Test | 1,614 | 56 | 1,670 |
 | **Total** | **17,490** | **548** | **18,038** |
 
-**8.90 hours · 252 speaker IDs · 19 intents · 31 command classes.** Counts exclude 1,044 wake/exit recordings. [Processed manifest](data/command_manifest.csv).
+**8.90 hours · 252 speaker IDs · 19 intents · 31 command classes.** Counts exclude 1,044 wake/exit recordings.
 
 ## 3. Training on A100
 
@@ -82,3 +89,14 @@ python benchmark.py --min-confidence 0.25
 ```
 
 Accuracy includes correct out-of-scope rejections. Timing covers features + inference, not microphone/wake/device latency. **Exploratory results:** threshold chosen after inspecting holdout; `s10` overlaps bestsynth training speakers. [Detailed reports](reports/pi).
+
+## Reviewer checklist
+
+| Item | Status |
+|---|---|
+| Public repo + one-command benchmark | Available after dependency setup; live audio assets supplied separately |
+| Dataset licence + DOI | Pending verification / DOI |
+| Training logs + checkpoint | [Included](reports/training) |
+| Pi latency reproduction | [Reproduced on Pi 5](reports/pi/reproduction_check.json); Pi 4 not tested |
+| Held-out test / unseen speakers | Saved test split included; external holdout has training-speaker overlap |
+| Comparable-size baseline | Pending |
