@@ -31,13 +31,11 @@ python main.py
 ![Model and example hardware](docs/Picture1.png)
 
 - **Architecture:** CNN + bidirectional GRU
+- **CNN:** 3 convolutional blocks; 3 x 3 kernels; 32, 64, 128 filters
 - **GRU:** 64 hidden units per direction
 - **Dropout:** 0.25
 - **Parameters:** 515,937
-- **Reshape:** 128 x 8 = 1,024 features per time step
-- **Classifier:** 128 -> 33
-- **Outputs:** 31 commands + wake/exit
-- **Wake phrase:** Hello Kibo
+- **Outputs:** 33 classes (31 commands + wake/exit)
 
 ## 2. Dataset
 
