@@ -1,0 +1,105 @@
+{
+  "dataset": "optionb",
+  "manifest_sha256": "79156436281fbd305af15d64b50ebc76b815a71754a8305dd9fd234682928ad4",
+  "configurations": [
+    {
+      "hidden_size": 64,
+      "dropout": 0.25,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 64,
+      "dropout": 0.25,
+      "lr": 0.001,
+      "weight_decay": 0.001
+    },
+    {
+      "hidden_size": 64,
+      "dropout": 0.25,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 64,
+      "dropout": 0.25,
+      "lr": 0.0005,
+      "weight_decay": 0.001
+    },
+    {
+      "hidden_size": 64,
+      "dropout": 0.35,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 64,
+      "dropout": 0.35,
+      "lr": 0.001,
+      "weight_decay": 0.001
+    },
+    {
+      "hidden_size": 64,
+      "dropout": 0.35,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 64,
+      "dropout": 0.35,
+      "lr": 0.0005,
+      "weight_decay": 0.001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.25,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.25,
+      "lr": 0.001,
+      "weight_decay": 0.001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.25,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.25,
+      "lr": 0.0005,
+      "weight_decay": 0.001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.35,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.35,
+      "lr": 0.001,
+      "weight_decay": 0.001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.35,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden_size": 128,
+      "dropout": 0.35,
+      "lr": 0.0005,
+      "weight_decay": 0.001
+    }
+  ],
+  "architecture": "crnn",
+  "selection": "validation macro F1",
+  "seed": 42
+}

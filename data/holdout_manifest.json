@@ -1,0 +1,2022 @@
+[
+  {
+    "path": "audio/0000.wav",
+    "source_file": "audio/holdout_000000_real_voice_PLAY_MUSIC_V2_t2.wav",
+    "sha256": "1289b1a8fbca53c7c3acffe89101219801d2166d9d8adcf4b285e6a24303463e",
+    "speaker": "202520785",
+    "transcript": "Play a song",
+    "expected_label": "PLAY_MUSIC",
+    "expected_intent": "PLAY_MUSIC",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0001.wav",
+    "source_file": "audio/holdout_000001_group_synthetic_PLAY_MUSIC_s10_v1_clean.wav",
+    "sha256": "be9b001136c9219af1f06b84b75f85839861f0d882a2d73e1c7b7980a2851b0f",
+    "speaker": "s10",
+    "transcript": "Play music",
+    "expected_label": "PLAY_MUSIC",
+    "expected_intent": "PLAY_MUSIC",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0002.wav",
+    "source_file": "audio/holdout_000002_real_voice_PLAY_MUSIC_V3_t2.wav",
+    "sha256": "81776b23eb521a5b956beba19f1e593841a043a3548749687419629efa3c1698",
+    "speaker": "202520785",
+    "transcript": "Start the music",
+    "expected_label": "PLAY_MUSIC",
+    "expected_intent": "PLAY_MUSIC",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0003.wav",
+    "source_file": "audio/holdout_000003_group_synthetic_PLAY_MUSIC_s10_v2_clean.wav",
+    "sha256": "159de6bed8005ccdc713f67037e74220ce32ec9de409cbeb0a1b7ace2563437f",
+    "speaker": "s10",
+    "transcript": "Start music",
+    "expected_label": "PLAY_MUSIC",
+    "expected_intent": "PLAY_MUSIC",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0004.wav",
+    "source_file": "audio/holdout_000004_FluentSpeechCommands_c5d5f9c0-4547-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "d937e7a9752f0f1b2bdbba664698bebb783ebf3235b24607277a1c95961d2504",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Put on the music",
+    "expected_label": "PLAY_MUSIC",
+    "expected_intent": "PLAY_MUSIC",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0005.wav",
+    "source_file": "audio/holdout_000005_group_synthetic_PLAY_MUSIC_s10_v3_clean.wav",
+    "sha256": "5d6d50afee449a10cb8550b5345a854435d320915865e0e61607cfe3e8d167f4",
+    "speaker": "s10",
+    "transcript": "Play some music",
+    "expected_label": "PLAY_MUSIC",
+    "expected_intent": "PLAY_MUSIC",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0006.wav",
+    "source_file": "audio/holdout_000006_real_voice_WEATHER_V1_t2.wav",
+    "sha256": "6363371a9f6f5602265ff0570e58d529d903a0faeb239e16d6efe291fd960a52",
+    "speaker": "202520785",
+    "transcript": "Weather",
+    "expected_label": "WEATHER",
+    "expected_intent": "WEATHER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0007.wav",
+    "source_file": "audio/holdout_000007_group_synthetic_WEATHER_s10_v1_clean.wav",
+    "sha256": "ad12faec184342a67497035b4a4d72fc873d19e492c036414c54be5c46b8b482",
+    "speaker": "s10",
+    "transcript": "Weather",
+    "expected_label": "WEATHER",
+    "expected_intent": "WEATHER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0008.wav",
+    "source_file": "audio/holdout_000008_real_voice_WEATHER_V2_t2.wav",
+    "sha256": "582da7a6f73d71d9aaa52d5555cff8718e8d8b1c32a2798e9da14c1859f6cea1",
+    "speaker": "202520785",
+    "transcript": "What's the weather?",
+    "expected_label": "WEATHER",
+    "expected_intent": "WEATHER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0009.wav",
+    "source_file": "audio/holdout_000009_group_synthetic_WEATHER_s10_v2_clean.wav",
+    "sha256": "01da9e98f23268bd590ed9018da59797b4cfecdca233b5783b3267e09af0d67a",
+    "speaker": "s10",
+    "transcript": "What's the weather?",
+    "expected_label": "WEATHER",
+    "expected_intent": "WEATHER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0010.wav",
+    "source_file": "audio/holdout_000010_real_voice_WEATHER_V3_t1.wav",
+    "sha256": "7e27e0030c7bee8f5d573a623d7027e5a7a64e6158ab6312994778ade09409e0",
+    "speaker": "202520785",
+    "transcript": "Tell me the weather",
+    "expected_label": "WEATHER",
+    "expected_intent": "WEATHER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0011.wav",
+    "source_file": "audio/holdout_000011_group_synthetic_WEATHER_s10_v3_clean.wav",
+    "sha256": "7207e24708a90acadc55c34609a17a1f21bb983bbfe32ee7606b1002c7d1b391",
+    "speaker": "s10",
+    "transcript": "Tell me the weather",
+    "expected_label": "WEATHER",
+    "expected_intent": "WEATHER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0012.wav",
+    "source_file": "audio/holdout_000012_real_voice_TIME_V1_t1.wav",
+    "sha256": "e11c03e9e89ac3ceb76611711fbdd0b13f72a1942b9abc6f7c248b752fe45b25",
+    "speaker": "202520785",
+    "transcript": "Time",
+    "expected_label": "TIME",
+    "expected_intent": "TIME",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0013.wav",
+    "source_file": "audio/holdout_000013_group_synthetic_TIME_s10_v1_clean.wav",
+    "sha256": "4cbcc1c32a5a50c7d1f7a63958e60c761c6237bbdeadec44712e36cfd7fad879",
+    "speaker": "s10",
+    "transcript": "Time",
+    "expected_label": "TIME",
+    "expected_intent": "TIME",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0014.wav",
+    "source_file": "audio/holdout_000014_real_voice_TIME_V2_t1.wav",
+    "sha256": "064bc55dd5afb1856d6b0acf3a6df7e00bbf462b91ffa92b4ed88aa225bb7d87",
+    "speaker": "202520785",
+    "transcript": "What time is it?",
+    "expected_label": "TIME",
+    "expected_intent": "TIME",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0015.wav",
+    "source_file": "audio/holdout_000015_group_synthetic_TIME_s10_v2_clean.wav",
+    "sha256": "39697f921c3b694ef5c8c65817003cc6b19311510a307b1b6a508c6f21f93071",
+    "speaker": "s10",
+    "transcript": "What time is it?",
+    "expected_label": "TIME",
+    "expected_intent": "TIME",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0016.wav",
+    "source_file": "audio/holdout_000016_real_voice_TIME_V3_t1.wav",
+    "sha256": "4c8bff0a32651dddf3751cdedd9054c92eab24430d2f85cf388269fcc6ca3bd2",
+    "speaker": "202520785",
+    "transcript": "Tell me the time",
+    "expected_label": "TIME",
+    "expected_intent": "TIME",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0017.wav",
+    "source_file": "audio/holdout_000017_group_synthetic_TIME_s10_v3_clean.wav",
+    "sha256": "cf69cc1dc8e5847b0847bcb98c62cbed7ace416d8a4adf247e7155c7343fb355",
+    "speaker": "s10",
+    "transcript": "Tell me the time",
+    "expected_label": "TIME",
+    "expected_intent": "TIME",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0018.wav",
+    "source_file": "audio/holdout_000018_real_voice_LIGHT_ON_V1_t2.wav",
+    "sha256": "f02d7331c09d29c9e9a165f7cf8eea462817d64701d342b188af438204b38207",
+    "speaker": "202520785",
+    "transcript": "Lights on",
+    "expected_label": "LIGHT_ON",
+    "expected_intent": "LIGHT_ON",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0019.wav",
+    "source_file": "audio/holdout_000019_group_synthetic_LIGHT_ON_s10_v1_clean.wav",
+    "sha256": "89cedde0b7c10e2301f4f3b38c49c6191343da1fb8736f9f87d5561ede07adfe",
+    "speaker": "s10",
+    "transcript": "Lights on",
+    "expected_label": "LIGHT_ON",
+    "expected_intent": "LIGHT_ON",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0020.wav",
+    "source_file": "audio/holdout_000020_real_voice_LIGHT_ON_V2_t2.wav",
+    "sha256": "aac2d222332ac1b9441850086a20a089713340d9b9d9c8e0645bbf1a77087991",
+    "speaker": "202520785",
+    "transcript": "Power on the lights",
+    "expected_label": "LIGHT_ON",
+    "expected_intent": "LIGHT_ON",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0021.wav",
+    "source_file": "audio/holdout_000021_group_synthetic_LIGHT_ON_s10_v2_clean.wav",
+    "sha256": "856ef0f4811299b2cfe75cd16fbc77a70ea6270aab7d6a745e8670182dfbc46a",
+    "speaker": "s10",
+    "transcript": "Power on the lights",
+    "expected_label": "LIGHT_ON",
+    "expected_intent": "LIGHT_ON",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0022.wav",
+    "source_file": "audio/holdout_000022_real_voice_LIGHT_ON_V3_t1.wav",
+    "sha256": "db5f84a2c2a921122c1bf7a60a003d22447b51eabc720828d4eeb9b2e1e93e00",
+    "speaker": "202520785",
+    "transcript": "Turn on the lights",
+    "expected_label": "LIGHT_ON",
+    "expected_intent": "LIGHT_ON",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0023.wav",
+    "source_file": "audio/holdout_000023_group_synthetic_LIGHT_ON_s10_v3_clean.wav",
+    "sha256": "eae7bf407f44e804f49fa6c6b95e71e4956f67eecdf5f7992a34bc5e06297b45",
+    "speaker": "s10",
+    "transcript": "Turn on the lights",
+    "expected_label": "LIGHT_ON",
+    "expected_intent": "LIGHT_ON",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0024.wav",
+    "source_file": "audio/holdout_000024_real_voice_LIGHT_OFF_V1_t1.wav",
+    "sha256": "03a0e892107b4d1f1a0b89262c733e7d2c1c9cc980fc57f6555f3c7137026ea3",
+    "speaker": "202520785",
+    "transcript": "Lights off",
+    "expected_label": "LIGHT_OFF",
+    "expected_intent": "LIGHT_OFF",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0025.wav",
+    "source_file": "audio/holdout_000025_group_synthetic_LIGHT_OFF_s10_v1_clean.wav",
+    "sha256": "4902c1d29efbaaceed6cf43ea2a8291598fbb8751a7841c4c427837d726353cf",
+    "speaker": "s10",
+    "transcript": "Lights out",
+    "expected_label": "LIGHT_OFF",
+    "expected_intent": "LIGHT_OFF",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0026.wav",
+    "source_file": "audio/holdout_000026_real_voice_LIGHT_OFF_V2_t2.wav",
+    "sha256": "14a113af16d39bfbdbea4adcb69069831b9605ceb3e686001d9c518f8787f093",
+    "speaker": "202520785",
+    "transcript": "Kill the lights",
+    "expected_label": "LIGHT_OFF",
+    "expected_intent": "LIGHT_OFF",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0027.wav",
+    "source_file": "audio/holdout_000027_group_synthetic_LIGHT_OFF_s10_v2_clean.wav",
+    "sha256": "167aa344abbd52cc58eee86463446bcae76adb5881dc5c76e8e733b91c85909a",
+    "speaker": "s10",
+    "transcript": "Kill the lights",
+    "expected_label": "LIGHT_OFF",
+    "expected_intent": "LIGHT_OFF",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0028.wav",
+    "source_file": "audio/holdout_000028_real_voice_LIGHT_OFF_V3_t2.wav",
+    "sha256": "87c7d2f9e3fcd1601d662342137a82110bc57b3ebd117f253a31f46fe4f4f902",
+    "speaker": "202520785",
+    "transcript": "Turn off the lights",
+    "expected_label": "LIGHT_OFF",
+    "expected_intent": "LIGHT_OFF",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0029.wav",
+    "source_file": "audio/holdout_000029_group_synthetic_LIGHT_OFF_s10_v3_clean.wav",
+    "sha256": "a054fd2bdc5730e436d17f9b64b136fc44cc01eaa7bc50ab7aff6c2b5b9e10a9",
+    "speaker": "s10",
+    "transcript": "Shut off the lights",
+    "expected_label": "LIGHT_OFF",
+    "expected_intent": "LIGHT_OFF",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0030.wav",
+    "source_file": "audio/holdout_000030_real_voice_PAUSE_V1_t1.wav",
+    "sha256": "09b07f37484f692f22c6ebe12955ae6f4693462a9c178f9ce8f1bff7baf77467",
+    "speaker": "202520785",
+    "transcript": "Pause",
+    "expected_label": "PAUSE",
+    "expected_intent": "PAUSE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0031.wav",
+    "source_file": "audio/holdout_000031_group_synthetic_PAUSE_s10_v1_clean.wav",
+    "sha256": "9fb406c5b00ea88bd5b10af0da476ff39de04ba0457a382c0c61c5d549e76c22",
+    "speaker": "s10",
+    "transcript": "Pause",
+    "expected_label": "PAUSE",
+    "expected_intent": "PAUSE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0032.wav",
+    "source_file": "audio/holdout_000032_real_voice_PAUSE_V2_t1.wav",
+    "sha256": "1f3c0a4b7e1beb3e50e478c4302834b7ce8106d3bf6e2bbd7e127abceb04ff36",
+    "speaker": "202520785",
+    "transcript": "Pause the music",
+    "expected_label": "PAUSE",
+    "expected_intent": "PAUSE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0033.wav",
+    "source_file": "audio/holdout_000033_group_synthetic_PAUSE_s10_v2_clean.wav",
+    "sha256": "e122b625c924a7c413a6c66da411716e059875395b0614dc930049e75a367b42",
+    "speaker": "s10",
+    "transcript": "Pause audio",
+    "expected_label": "PAUSE",
+    "expected_intent": "PAUSE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0034.wav",
+    "source_file": "audio/holdout_000034_real_voice_PAUSE_V3_t1.wav",
+    "sha256": "1b594a6a08016141698ad56d163888f8730e631d1932c75ac80035a27e14479b",
+    "speaker": "202520785",
+    "transcript": "Pause this song",
+    "expected_label": "PAUSE",
+    "expected_intent": "PAUSE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0035.wav",
+    "source_file": "audio/holdout_000035_group_synthetic_PAUSE_s10_v3_clean.wav",
+    "sha256": "43737194c4d0e40628c25aa49d4553556bd6d9db2ae020d22c29a0d5cdeb2078",
+    "speaker": "s10",
+    "transcript": "Pause song",
+    "expected_label": "PAUSE",
+    "expected_intent": "PAUSE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0036.wav",
+    "source_file": "audio/holdout_000036_real_voice_STOP_V2_t1.wav",
+    "sha256": "cf1e1f1de231c777bf25ae54164aedcadf9fc8dfaed03f9bb899beeae7703e49",
+    "speaker": "202520785",
+    "transcript": "Stop music",
+    "expected_label": "STOP",
+    "expected_intent": "STOP",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0037.wav",
+    "source_file": "audio/holdout_000037_group_synthetic_STOP_s10_v1_clean.wav",
+    "sha256": "64c36239510d8a6d2324770ec7b6e2bfa7b3c8eed6f8ac81e21edf80ba6b9f3a",
+    "speaker": "s10",
+    "transcript": "Stop",
+    "expected_label": "STOP",
+    "expected_intent": "STOP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0038.wav",
+    "source_file": "audio/holdout_000038_real_voice_STOP_V3_t1.wav",
+    "sha256": "98a2d225ea32555e04ad173bea55cde7dd1d02da718905cde40da2ea6cc33eef",
+    "speaker": "202520785",
+    "transcript": "Stop playing music",
+    "expected_label": "STOP",
+    "expected_intent": "STOP",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0039.wav",
+    "source_file": "audio/holdout_000039_group_synthetic_STOP_s10_v2_clean.wav",
+    "sha256": "c5f3c50a1998f7a2bb6e9d894997801039d90e2053fa2f898f5a43dddb05a0c8",
+    "speaker": "s10",
+    "transcript": "Stop playing",
+    "expected_label": "STOP",
+    "expected_intent": "STOP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0040.wav",
+    "source_file": "audio/holdout_000040_FluentSpeechCommands_5986cc10-454f-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "b8dec910e0ed18e1eadc9187a87c50bd8c441e312c7e9eba8c4601b0f4364c5c",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Turn off the music",
+    "expected_label": "STOP",
+    "expected_intent": "STOP",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0041.wav",
+    "source_file": "audio/holdout_000041_group_synthetic_STOP_s10_v3_clean.wav",
+    "sha256": "a55b33a0847b8e8e3f531f1bf5d46c105a485cef8be7b63aff62070d1d79a5c9",
+    "speaker": "s10",
+    "transcript": "End playback",
+    "expected_label": "STOP",
+    "expected_intent": "STOP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0042.wav",
+    "source_file": "audio/holdout_000042_real_voice_NEXT_V2_t2.wav",
+    "sha256": "b33ad1bbb514dd03fd7756f8daae3692ec2778c409d8664a1d7776c43a40560f",
+    "speaker": "202520785",
+    "transcript": "Next song",
+    "expected_label": "NEXT",
+    "expected_intent": "NEXT",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0043.wav",
+    "source_file": "audio/holdout_000043_group_synthetic_NEXT_s10_v1_clean.wav",
+    "sha256": "89fc47cd78c02c4b85eebf2e14e4746ad320ee6aac4f570e8bf18534d5777c1b",
+    "speaker": "s10",
+    "transcript": "Next song",
+    "expected_label": "NEXT",
+    "expected_intent": "NEXT",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0044.wav",
+    "source_file": "audio/holdout_000044_real_voice_NEXT_V1_t2.wav",
+    "sha256": "32fc511e9c485181bfd711a41e7bca5d143d640938923f6a6a8c46472cccdb8d",
+    "speaker": "202520785",
+    "transcript": "Skip song",
+    "expected_label": "NEXT",
+    "expected_intent": "NEXT",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0045.wav",
+    "source_file": "audio/holdout_000045_group_synthetic_NEXT_s10_v2_clean.wav",
+    "sha256": "bbe5f42b6062a54a7711a1a40e00c2f4d573df89fe960bbcb052ac8ccb58defb",
+    "speaker": "s10",
+    "transcript": "Skip song",
+    "expected_label": "NEXT",
+    "expected_intent": "NEXT",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0046.wav",
+    "source_file": "audio/holdout_000046_real_voice_NEXT_V3_t2.wav",
+    "sha256": "938e481985c469c7a658456851fc6974afd34f1b9c7d7a77cae93d6164573997",
+    "speaker": "202520785",
+    "transcript": "Play next song",
+    "expected_label": "NEXT",
+    "expected_intent": "NEXT",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0047.wav",
+    "source_file": "audio/holdout_000047_group_synthetic_NEXT_s10_v3_clean.wav",
+    "sha256": "a01d85be619706e117c6da781777bdcf8e3a261cf42956de6dc80e8d9611eac7",
+    "speaker": "s10",
+    "transcript": "Play next song",
+    "expected_label": "NEXT",
+    "expected_intent": "NEXT",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0048.wav",
+    "source_file": "audio/holdout_000048_real_voice_VOLUME_UP_V1_t2.wav",
+    "sha256": "7e304d839118be19c64e283fc870b1c461ce54410212904726cb9a0c678574c0",
+    "speaker": "202520785",
+    "transcript": "Volume up",
+    "expected_label": "VOLUME_UP",
+    "expected_intent": "VOLUME_UP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0049.wav",
+    "source_file": "audio/holdout_000049_group_synthetic_VOLUME_UP_s10_v1_clean.wav",
+    "sha256": "c943e578021c893864e97403f6ec719d6ad74634574952e226c293d81fd2ed02",
+    "speaker": "s10",
+    "transcript": "Volume up",
+    "expected_label": "VOLUME_UP",
+    "expected_intent": "VOLUME_UP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0050.wav",
+    "source_file": "audio/holdout_000050_real_voice_VOLUME_UP_V2_t1.wav",
+    "sha256": "ea4f95fe47a474e52829664e71eff126b571fcc9d4a025c5a0fe0aa488c28b72",
+    "speaker": "202520785",
+    "transcript": "Increase the volume",
+    "expected_label": "VOLUME_UP",
+    "expected_intent": "VOLUME_UP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0051.wav",
+    "source_file": "audio/holdout_000051_group_synthetic_VOLUME_UP_s10_v2_clean.wav",
+    "sha256": "337039a300f7902b5b27318f0ce5dac4e07eb556ca8cbd99189828b9a5a54787",
+    "speaker": "s10",
+    "transcript": "Increase the volume",
+    "expected_label": "VOLUME_UP",
+    "expected_intent": "VOLUME_UP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0052.wav",
+    "source_file": "audio/holdout_000052_real_voice_VOLUME_UP_V3_t1.wav",
+    "sha256": "661d759deb875e6ee12508aedc3c86a6f180a13205a1127c9cee25b15508fe1c",
+    "speaker": "202520785",
+    "transcript": "Turn the volume up",
+    "expected_label": "VOLUME_UP",
+    "expected_intent": "VOLUME_UP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0053.wav",
+    "source_file": "audio/holdout_000053_group_synthetic_VOLUME_UP_s10_v3_clean.wav",
+    "sha256": "8de2f9f0e1ec4d8542f02f8d871ea1f3119c0f8b2498606df352090800534594",
+    "speaker": "s10",
+    "transcript": "Turn the volume up",
+    "expected_label": "VOLUME_UP",
+    "expected_intent": "VOLUME_UP",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0054.wav",
+    "source_file": "audio/holdout_000054_real_voice_VOLUME_DOWN_V1_t2.wav",
+    "sha256": "6e3fa463deaec341c2a9a5da531fa3fb683f3e57c477fe0d96f3fd31bc4b088a",
+    "speaker": "202520785",
+    "transcript": "Volume down",
+    "expected_label": "VOLUME_DOWN",
+    "expected_intent": "VOLUME_DOWN",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0055.wav",
+    "source_file": "audio/holdout_000055_group_synthetic_VOLUME_DOWN_s10_v1_clean.wav",
+    "sha256": "6494ac275f9b59df29d22422d9f39aad9bf553c73ba8d29f97fd71988b599430",
+    "speaker": "s10",
+    "transcript": "Volume down",
+    "expected_label": "VOLUME_DOWN",
+    "expected_intent": "VOLUME_DOWN",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0056.wav",
+    "source_file": "audio/holdout_000056_real_voice_VOLUME_DOWN_V2_t1.wav",
+    "sha256": "d120fcce30e762344ee26e0b1cd5f480d4e5db03a66308e5da163e60d2cb7f80",
+    "speaker": "202520785",
+    "transcript": "Lower the volume",
+    "expected_label": "VOLUME_DOWN",
+    "expected_intent": "VOLUME_DOWN",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0057.wav",
+    "source_file": "audio/holdout_000057_group_synthetic_VOLUME_DOWN_s10_v2_clean.wav",
+    "sha256": "8a760c7ed986cdc7ffad5c282200bc527f0529cbb7d072cd0b5fbea60b56556b",
+    "speaker": "s10",
+    "transcript": "Lower the volume",
+    "expected_label": "VOLUME_DOWN",
+    "expected_intent": "VOLUME_DOWN",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0058.wav",
+    "source_file": "audio/holdout_000058_real_voice_VOLUME_DOWN_V3_t1.wav",
+    "sha256": "3d2deb118c5a2ba2b04dd329e51b51485e1c0366bfeb30734c29b15f323cab5c",
+    "speaker": "202520785",
+    "transcript": "Turn the volume down",
+    "expected_label": "VOLUME_DOWN",
+    "expected_intent": "VOLUME_DOWN",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0059.wav",
+    "source_file": "audio/holdout_000059_group_synthetic_VOLUME_DOWN_s10_v3_clean.wav",
+    "sha256": "a5783f3c93239fa6ff3ee594c5268a2b35c667bdf0bdbddbc8cf06f5c4d7b9cd",
+    "speaker": "s10",
+    "transcript": "Turn the volume down",
+    "expected_label": "VOLUME_DOWN",
+    "expected_intent": "VOLUME_DOWN",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0060.wav",
+    "source_file": "audio/holdout_000060_real_voice_CALL_V1_t2.wav",
+    "sha256": "b1f614dabc851fb42368725dd3cd395ee71a8fa42396f86772955cca09a79ce4",
+    "speaker": "202520785",
+    "transcript": "Call",
+    "expected_label": "CALL",
+    "expected_intent": "CALL",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0061.wav",
+    "source_file": "audio/holdout_000061_group_synthetic_CALL_s10_v1_clean.wav",
+    "sha256": "a5e40b4ce9c700fed33c4b0d169d6e6acf947e75260b25dc58b580bae2e35948",
+    "speaker": "s10",
+    "transcript": "Call",
+    "expected_label": "CALL",
+    "expected_intent": "CALL",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0062.wav",
+    "source_file": "audio/holdout_000062_real_voice_CALL_V2_t1.wav",
+    "sha256": "0e7af8516a21c1347cdab96bfbe7e1a89953b2547a042d184514174e034f40b3",
+    "speaker": "202520785",
+    "transcript": "Make a call",
+    "expected_label": "CALL",
+    "expected_intent": "CALL",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0063.wav",
+    "source_file": "audio/holdout_000063_group_synthetic_CALL_s10_v2_clean.wav",
+    "sha256": "0871797020ba9eca0fa14c8c0f4578ce58647b97d97b9f99c9ee808e8b67a4fc",
+    "speaker": "s10",
+    "transcript": "Make a call",
+    "expected_label": "CALL",
+    "expected_intent": "CALL",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0064.wav",
+    "source_file": "audio/holdout_000064_real_voice_CALL_V3_t1.wav",
+    "sha256": "fa81e0063c4057d7560fb20d7559f2f783e44a4526845f648f6595263b7447c0",
+    "speaker": "202520785",
+    "transcript": "Make a phone call",
+    "expected_label": "CALL",
+    "expected_intent": "CALL",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0065.wav",
+    "source_file": "audio/holdout_000065_group_synthetic_CALL_s10_v3_clean.wav",
+    "sha256": "a6f7f66d35ae84eca85f08efe2e2a9d121d299550869f443224b8e78f796282b",
+    "speaker": "s10",
+    "transcript": "Make a phone call",
+    "expected_label": "CALL",
+    "expected_intent": "CALL",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0066.wav",
+    "source_file": "audio/holdout_000066_real_voice_MESSAGE_V1_t2.wav",
+    "sha256": "c0717db162da3a5d2021539635d7996240c8c6f851660ad28bbc93cd525850fc",
+    "speaker": "202520785",
+    "transcript": "Message",
+    "expected_label": "MESSAGE",
+    "expected_intent": "MESSAGE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0067.wav",
+    "source_file": "audio/holdout_000067_group_synthetic_MESSAGE_s10_v1_clean.wav",
+    "sha256": "4f2fda0fdb58a9b64e279fb69d7cc353fe3057b61820389138502ca0fbfdc851",
+    "speaker": "s10",
+    "transcript": "Message",
+    "expected_label": "MESSAGE",
+    "expected_intent": "MESSAGE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0068.wav",
+    "source_file": "audio/holdout_000068_real_voice_MESSAGE_V2_t1.wav",
+    "sha256": "a690edd477e8e1c7f4f427cfe637b0b9afccce97e11b50150fca135bddf5f90b",
+    "speaker": "202520785",
+    "transcript": "Send a message",
+    "expected_label": "MESSAGE",
+    "expected_intent": "MESSAGE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0069.wav",
+    "source_file": "audio/holdout_000069_group_synthetic_MESSAGE_s10_v2_clean.wav",
+    "sha256": "2481fa63601cb58fd7237051b67334f25f7f32bb8f77eda0514693055861ba29",
+    "speaker": "s10",
+    "transcript": "Send a message",
+    "expected_label": "MESSAGE",
+    "expected_intent": "MESSAGE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0070.wav",
+    "source_file": "audio/holdout_000070_real_voice_MESSAGE_V3_t2.wav",
+    "sha256": "b19797df952f6deaca47b9250e54759ac6364901c675ddfa3577c18a03448224",
+    "speaker": "202520785",
+    "transcript": "Send my message",
+    "expected_label": "MESSAGE",
+    "expected_intent": "MESSAGE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0071.wav",
+    "source_file": "audio/holdout_000071_group_synthetic_MESSAGE_s10_v3_clean.wav",
+    "sha256": "b29f093e93cb20cb9b46a23ded2ed1b9b82c68473e897362e6c246583b0271fa",
+    "speaker": "s10",
+    "transcript": "Send my message",
+    "expected_label": "MESSAGE",
+    "expected_intent": "MESSAGE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0072.wav",
+    "source_file": "audio/holdout_000072_real_voice_LIST_REMINDERS_V1_t2.wav",
+    "sha256": "21f7dbc20207c39b75e3226a9bf3def50d23d33d04d6a1c9a6704869c7a2b88c",
+    "speaker": "202520785",
+    "transcript": "Reminders",
+    "expected_label": "LIST_REMINDERS",
+    "expected_intent": "LIST_REMINDERS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0073.wav",
+    "source_file": "audio/holdout_000073_group_synthetic_LIST_REMINDERS_s10_v1_clean.wav",
+    "sha256": "ed7b4b11bef2e60e30a4cce414f8e35b52e9c20cdb7a7ddfe8dc530ce38a78db",
+    "speaker": "s10",
+    "transcript": "Reminders",
+    "expected_label": "LIST_REMINDERS",
+    "expected_intent": "LIST_REMINDERS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0074.wav",
+    "source_file": "audio/holdout_000074_real_voice_LIST_REMINDERS_V2_t2.wav",
+    "sha256": "a854f52a8dd8060b653629bb4c17b48b1c823e521fbf4daed0e7ffcc6418f7fa",
+    "speaker": "202520785",
+    "transcript": "Show my reminders",
+    "expected_label": "LIST_REMINDERS",
+    "expected_intent": "LIST_REMINDERS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0075.wav",
+    "source_file": "audio/holdout_000075_group_synthetic_LIST_REMINDERS_s10_v2_clean.wav",
+    "sha256": "959cb34f36432af41156618dad8b6ba2d9939f10af26c687579d5ed8c9f229f7",
+    "speaker": "s10",
+    "transcript": "Show my reminders",
+    "expected_label": "LIST_REMINDERS",
+    "expected_intent": "LIST_REMINDERS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0076.wav",
+    "source_file": "audio/holdout_000076_real_voice_LIST_REMINDERS_V3_t1.wav",
+    "sha256": "9d49d07e8e0d3258ac484c3de580fe93efa07c344f30eb43d313cc994af94a85",
+    "speaker": "202520785",
+    "transcript": "List my reminders",
+    "expected_label": "LIST_REMINDERS",
+    "expected_intent": "LIST_REMINDERS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0077.wav",
+    "source_file": "audio/holdout_000077_group_synthetic_LIST_REMINDERS_s10_v3_clean.wav",
+    "sha256": "481a13b427bf3a55406cbe0f05d2776793c80842cb26c20c3c0d1cd8a2028a54",
+    "speaker": "s10",
+    "transcript": "List my reminders",
+    "expected_label": "LIST_REMINDERS",
+    "expected_intent": "LIST_REMINDERS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0078.wav",
+    "source_file": "audio/holdout_000078_real_voice_TIMER_V1_1_t1.wav",
+    "sha256": "ee0d4ac0f2dced0c5c5be172002aeac61e98cf44e9975717711e071074d265c9",
+    "speaker": "202520785",
+    "transcript": "Timer 10 seconds",
+    "expected_label": "TIMER_10s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0079.wav",
+    "source_file": "audio/holdout_000079_group_synthetic_TIMER_10s_s10_v1_clean.wav",
+    "sha256": "9a30b87191e91c7b5298a0236e1dc5dfe2a2317966bcd84f97c5682eb8f8cddc",
+    "speaker": "s10",
+    "transcript": "Timer 10 seconds",
+    "expected_label": "TIMER_10s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0080.wav",
+    "source_file": "audio/holdout_000080_real_voice_TIMER_V1_2_t1.wav",
+    "sha256": "101a31b0ffc580739286a24484adaee9d64ad2d257961b5ef480dbb81f350bce",
+    "speaker": "202520785",
+    "transcript": "Timer 30 seconds",
+    "expected_label": "TIMER_30s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0081.wav",
+    "source_file": "audio/holdout_000081_group_synthetic_TIMER_30s_s10_v1_clean.wav",
+    "sha256": "d5c38893067985c5d994a408806ac4638d50a584014ac5550992198a45692f50",
+    "speaker": "s10",
+    "transcript": "Timer 30 seconds",
+    "expected_label": "TIMER_30s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0082.wav",
+    "source_file": "audio/holdout_000082_real_voice_TIMER_V1_3_t2.wav",
+    "sha256": "43af3f6fe2d31d172d4db3d92becf612b56f3ffc2eab14f3a42f9db2f9925a49",
+    "speaker": "202520785",
+    "transcript": "Timer 1 minute",
+    "expected_label": "TIMER_1m",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0083.wav",
+    "source_file": "audio/holdout_000083_group_synthetic_TIMER_1m_s10_v1_clean.wav",
+    "sha256": "3b6054cba4cec4a2f9dfe83c5cd55853c00e2f7b35504351f7d27a4793629374",
+    "speaker": "s10",
+    "transcript": "Timer 1 minute",
+    "expected_label": "TIMER_1m",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0084.wav",
+    "source_file": "audio/holdout_000084_real_voice_TIMER_V2_1_t2.wav",
+    "sha256": "6636b985343b81972c777d355c2817cef24af800df099001bbf9086d0092535c",
+    "speaker": "202520785",
+    "transcript": "Countdown for 10 seconds",
+    "expected_label": "TIMER_10s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0085.wav",
+    "source_file": "audio/holdout_000085_group_synthetic_TIMER_10s_s10_v2_clean.wav",
+    "sha256": "777830534a5ca2e030c3cdf8d26c4f53797c78211c6d393da6a59c128d8fe510",
+    "speaker": "s10",
+    "transcript": "Countdown for 10 seconds",
+    "expected_label": "TIMER_10s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0086.wav",
+    "source_file": "audio/holdout_000086_real_voice_TIMER_V2_2_t2.wav",
+    "sha256": "0a37de1a87040248ab946f8a69e2b1b9ba0da2e762a5e35e08fe3cda8dd057e1",
+    "speaker": "202520785",
+    "transcript": "Countdown for 30 seconds",
+    "expected_label": "TIMER_30s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0087.wav",
+    "source_file": "audio/holdout_000087_group_synthetic_TIMER_30s_s10_v2_clean.wav",
+    "sha256": "262beabd91f4f19680a09a205f8fbe17d0a59f7859e79f6a9392054ea543186f",
+    "speaker": "s10",
+    "transcript": "Countdown for 30 seconds",
+    "expected_label": "TIMER_30s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0088.wav",
+    "source_file": "audio/holdout_000088_real_voice_TIMER_V2_3_t1.wav",
+    "sha256": "eca262b236124ca4ab5c760e324f816f972106ee40ef0a406371fc0a9327b001",
+    "speaker": "202520785",
+    "transcript": "Countdown for 1 minute",
+    "expected_label": "TIMER_1m",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0089.wav",
+    "source_file": "audio/holdout_000089_group_synthetic_TIMER_1m_s10_v2_clean.wav",
+    "sha256": "58561f3100dcc78a54dc8188c211f86be1266b15c9132f2db15e345dbfe2ed78",
+    "speaker": "s10",
+    "transcript": "Countdown for 1 minute",
+    "expected_label": "TIMER_1m",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0090.wav",
+    "source_file": "audio/holdout_000090_real_voice_TIMER_V3_1_t2.wav",
+    "sha256": "9b45a7adab7d5527a24c0a8b0d11f85acf29c34577c1717ac27dec49b0863dee",
+    "speaker": "202520785",
+    "transcript": "Start a timer for 10 seconds",
+    "expected_label": "TIMER_10s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0091.wav",
+    "source_file": "audio/holdout_000091_group_synthetic_TIMER_10s_s10_v3_clean.wav",
+    "sha256": "b2aa8fdfddb28715c61d7e8700e311a6f98ed06f057e3b13b6d2023437e27bf9",
+    "speaker": "s10",
+    "transcript": "Start a timer for 10 seconds",
+    "expected_label": "TIMER_10s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0092.wav",
+    "source_file": "audio/holdout_000092_real_voice_TIMER_V3_2_t1.wav",
+    "sha256": "ded4b5eb228f41f01cd64f25a685b5b9fdadf6592c6918cb26a87b6bb92a80ff",
+    "speaker": "202520785",
+    "transcript": "Start a timer for 30 seconds",
+    "expected_label": "TIMER_30s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0093.wav",
+    "source_file": "audio/holdout_000093_group_synthetic_TIMER_30s_s10_v3_clean.wav",
+    "sha256": "dd0ae0df3fe3ecbeaf05cf929d2f521ae198f5ba6f4ffe7f11020e750b400829",
+    "speaker": "s10",
+    "transcript": "Start a timer for 30 seconds",
+    "expected_label": "TIMER_30s",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0094.wav",
+    "source_file": "audio/holdout_000094_real_voice_TIMER_V3_3_t2.wav",
+    "sha256": "adedddcbf078a5a72a4ecd12f28492bb588be257ae1829490cc1204386527f52",
+    "speaker": "202520785",
+    "transcript": "Start a timer for 1 minute",
+    "expected_label": "TIMER_1m",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0095.wav",
+    "source_file": "audio/holdout_000095_group_synthetic_TIMER_1m_s10_v3_clean.wav",
+    "sha256": "8f8cd1dae35ce3949f54a0705afc0ba70f2c4597d4c26d04c038c16c3d2fbd15",
+    "speaker": "s10",
+    "transcript": "Start a timer for 1 minute",
+    "expected_label": "TIMER_1m",
+    "expected_intent": "TIMER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0096.wav",
+    "source_file": "audio/holdout_000096_real_voice_ALARM_V1_1_t1.wav",
+    "sha256": "a0376188eee742a3ce03fb3ee6f4462def1098c23f6caf9eab6632d9040b9035",
+    "speaker": "202520785",
+    "transcript": "Alarm 6:00 AM",
+    "expected_label": "ALARM_6_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0097.wav",
+    "source_file": "audio/holdout_000097_group_synthetic_ALARM_6_00AM_s10_v1_clean.wav",
+    "sha256": "86069a87d824d09c8864f9589d0878fe67a67cd39e82130d62e2b87c42b8958c",
+    "speaker": "s10",
+    "transcript": "Alarm 6 AM",
+    "expected_label": "ALARM_6_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0098.wav",
+    "source_file": "audio/holdout_000098_real_voice_ALARM_V1_2_t2.wav",
+    "sha256": "cf9af39d6f6a21d401069f4d567d769e40b3c31577f3a9a695c1f4e7788799c1",
+    "speaker": "202520785",
+    "transcript": "Alarm 8:00 AM",
+    "expected_label": "ALARM_8_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0099.wav",
+    "source_file": "audio/holdout_000099_group_synthetic_ALARM_8_00AM_s10_v1_clean.wav",
+    "sha256": "0d796831589129c04ad809a6e223452da1c111188a6b9135d40edff39ab88edb",
+    "speaker": "s10",
+    "transcript": "Alarm 8 AM",
+    "expected_label": "ALARM_8_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0100.wav",
+    "source_file": "audio/holdout_000100_group_synthetic_ALARM_9_00PM_s10_v1_clean.wav",
+    "sha256": "7d34feec5d4ddda92efa0f72753ecd88f38d371e4d465e804ae873c065aa18fd",
+    "speaker": "s10",
+    "transcript": "Alarm 9 PM",
+    "expected_label": "ALARM_9_00PM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0101.wav",
+    "source_file": "audio/holdout_000101_group_synthetic_ALARM_9_00PM_s100_v1_clean.wav",
+    "sha256": "4a8ccef42086a75073e90568c1cca3a113800b6651c0cf5b1ce8d744b27e6ecb",
+    "speaker": "s100",
+    "transcript": "Alarm 9 PM",
+    "expected_label": "ALARM_9_00PM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0102.wav",
+    "source_file": "audio/holdout_000102_real_voice_ALARM_V2_1_t1.wav",
+    "sha256": "14c139d97d8727117b2bf97f40f5b638875c45f288d5608bd08a62b0e6b84e1b",
+    "speaker": "202520785",
+    "transcript": "Wake me up at 6:00 AM",
+    "expected_label": "ALARM_6_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0103.wav",
+    "source_file": "audio/holdout_000103_group_synthetic_ALARM_6_00AM_s10_v2_clean.wav",
+    "sha256": "e62026afb7c9660478e3c890e1c3b502ec17fe12c00b60a328dd5191f3f29456",
+    "speaker": "s10",
+    "transcript": "Wake me up at 6 AM",
+    "expected_label": "ALARM_6_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0104.wav",
+    "source_file": "audio/holdout_000104_real_voice_ALARM_V2_2_t1.wav",
+    "sha256": "ab8b226a9f07df508acc5a729b36e870cdc1fef6b901a6b049a843354627af17",
+    "speaker": "202520785",
+    "transcript": "Wake me up at 8:00 AM",
+    "expected_label": "ALARM_8_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0105.wav",
+    "source_file": "audio/holdout_000105_group_synthetic_ALARM_8_00AM_s10_v2_clean.wav",
+    "sha256": "3a7d47b6c25e242191ebfa1f27fc8f0d36acc1ba21b67c4ab6578e60a9960f55",
+    "speaker": "s10",
+    "transcript": "Wake me up at 8 AM",
+    "expected_label": "ALARM_8_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0106.wav",
+    "source_file": "audio/holdout_000106_real_voice_ALARM_V2_3_t2.wav",
+    "sha256": "bc34524d875dbf33dca6129212f0ddd8f67e804202d485a824bb936ac97173f4",
+    "speaker": "202520785",
+    "transcript": "Wake me up at 9:00 PM",
+    "expected_label": "ALARM_9_00PM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0107.wav",
+    "source_file": "audio/holdout_000107_group_synthetic_ALARM_9_00PM_s10_v2_clean.wav",
+    "sha256": "09bbb09cf4f69de8d1dadcccea8ef288353fb3d0c16b936733036bb6b85aa592",
+    "speaker": "s10",
+    "transcript": "Wake me up at 9 PM",
+    "expected_label": "ALARM_9_00PM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0108.wav",
+    "source_file": "audio/holdout_000108_real_voice_ALARM_V3_1_t2.wav",
+    "sha256": "5a6861784c08b7d08b6429b05203ea50e84bf4b67d30a48cc3da3847f968feac",
+    "speaker": "202520785",
+    "transcript": "Set an alarm for 6:00 AM",
+    "expected_label": "ALARM_6_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0109.wav",
+    "source_file": "audio/holdout_000109_group_synthetic_ALARM_6_00AM_s10_v3_clean.wav",
+    "sha256": "ff1ecc109b7c667e2ace636e2037d5cb52f4709b76ae3b52709c0b1ca9acfbe0",
+    "speaker": "s10",
+    "transcript": "Set an alarm for 6 AM",
+    "expected_label": "ALARM_6_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0110.wav",
+    "source_file": "audio/holdout_000110_real_voice_ALARM_V3_2_t2.wav",
+    "sha256": "a5362bda2ec09264fdf958683c2d502c4f95e04e3758f5179ecbab7e1b029138",
+    "speaker": "202520785",
+    "transcript": "Set an alarm for 8:00 AM",
+    "expected_label": "ALARM_8_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0111.wav",
+    "source_file": "audio/holdout_000111_group_synthetic_ALARM_8_00AM_s10_v3_clean.wav",
+    "sha256": "786b331c980e1f22fd12001894788758d0049bae0319a2213ddd79bd458cb44c",
+    "speaker": "s10",
+    "transcript": "Set an alarm for 8 AM",
+    "expected_label": "ALARM_8_00AM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0112.wav",
+    "source_file": "audio/holdout_000112_real_voice_ALARM_V3_3_t2.wav",
+    "sha256": "f4ca4f726cf40f8b8b257735c6989e72ee130a3da00d9d10e4f071354aa7686f",
+    "speaker": "202520785",
+    "transcript": "Set an alarm for 9:00 PM",
+    "expected_label": "ALARM_9_00PM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0113.wav",
+    "source_file": "audio/holdout_000113_group_synthetic_ALARM_9_00PM_s10_v3_clean.wav",
+    "sha256": "79f4451b34f362e75dd9420b0b4eca3461a76b91fc12d6be202b7afba55995dd",
+    "speaker": "s10",
+    "transcript": "Set an alarm for 9 PM",
+    "expected_label": "ALARM_9_00PM",
+    "expected_intent": "ALARM",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0114.wav",
+    "source_file": "audio/holdout_000114_real_voice_TEMPERATURE_V1_1_t1.wav",
+    "sha256": "292d49d8b6f3c815f3082843761ecec577ebb0d7da403445e7bc8139f904090d",
+    "speaker": "202520785",
+    "transcript": "Temperature 18 degrees",
+    "expected_label": "TEMPERATURE_18",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0115.wav",
+    "source_file": "audio/holdout_000115_group_synthetic_TEMPERATURE_18_s10_v1_clean.wav",
+    "sha256": "2243c6858f97eced6eccfa12b3cd36c320fa933ccd6b72af89d784b7da5f9a76",
+    "speaker": "s10",
+    "transcript": "Temperature 18 degrees",
+    "expected_label": "TEMPERATURE_18",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0116.wav",
+    "source_file": "audio/holdout_000116_real_voice_TEMPERATURE_V1_2_t1.wav",
+    "sha256": "28b5f1385fa349d480401282e3f801795f4006d614135849436c2ff628c4460a",
+    "speaker": "202520785",
+    "transcript": "Temperature 22 degrees",
+    "expected_label": "TEMPERATURE_22",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0117.wav",
+    "source_file": "audio/holdout_000117_group_synthetic_TEMPERATURE_22_s10_v1_clean.wav",
+    "sha256": "35cea99a952202c0fc3eac78526aabc78e0d2f91769c819f3014d158fff960d8",
+    "speaker": "s10",
+    "transcript": "Temperature 22 degrees",
+    "expected_label": "TEMPERATURE_22",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0118.wav",
+    "source_file": "audio/holdout_000118_real_voice_TEMPERATURE_V1_3_t1.wav",
+    "sha256": "6270024ff22a4800e53edb4ca50ee12c88cac9b60cfaaf9febb91cc815784c8d",
+    "speaker": "202520785",
+    "transcript": "Temperature 26 degrees",
+    "expected_label": "TEMPERATURE_26",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0119.wav",
+    "source_file": "audio/holdout_000119_group_synthetic_TEMPERATURE_26_s10_v1_clean.wav",
+    "sha256": "350b8b00f538aed737252be2a02f6a4352e325206518063699d17d058b26ef0b",
+    "speaker": "s10",
+    "transcript": "Temperature 26 degrees",
+    "expected_label": "TEMPERATURE_26",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0120.wav",
+    "source_file": "audio/holdout_000120_real_voice_TEMPERATURE_V2_1_t2.wav",
+    "sha256": "61774b994ad3c0e46a33483ac0de6c1f1feb1a4df3e5e13dbb579cdd302f829d",
+    "speaker": "202520785",
+    "transcript": "Change the temperature to 18 degrees",
+    "expected_label": "TEMPERATURE_18",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0121.wav",
+    "source_file": "audio/holdout_000121_group_synthetic_TEMPERATURE_18_s10_v2_clean.wav",
+    "sha256": "d7b2af42625891edb5af6393629c71f761fd44d46f8d2b3ca457e04eb00ea304",
+    "speaker": "s10",
+    "transcript": "Change the temperature to 18 degrees",
+    "expected_label": "TEMPERATURE_18",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0122.wav",
+    "source_file": "audio/holdout_000122_real_voice_TEMPERATURE_V2_2_t1.wav",
+    "sha256": "adc256995221daeaacc9f81f986393fe2b76e01f519b0ee3b7c9492027e5989a",
+    "speaker": "202520785",
+    "transcript": "Change the temperature to 22 degrees",
+    "expected_label": "TEMPERATURE_22",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0123.wav",
+    "source_file": "audio/holdout_000123_group_synthetic_TEMPERATURE_22_s10_v2_clean.wav",
+    "sha256": "d972a3f4c58bca472fb8a789c51c0343fc265aa7dbe189518e4a19b53160e8b5",
+    "speaker": "s10",
+    "transcript": "Change the temperature to 22 degrees",
+    "expected_label": "TEMPERATURE_22",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0124.wav",
+    "source_file": "audio/holdout_000124_real_voice_TEMPERATURE_V2_3_t1.wav",
+    "sha256": "dead00cde50a080992b777f264efca27d187f7e46e460e595e5b6ef610960074",
+    "speaker": "202520785",
+    "transcript": "Change the temperature to 26 degrees",
+    "expected_label": "TEMPERATURE_26",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0125.wav",
+    "source_file": "audio/holdout_000125_group_synthetic_TEMPERATURE_26_s10_v2_clean.wav",
+    "sha256": "8a2c0b40ca4f4c18b8659be156cd7e34e7b8c1c6939b9519b7437d3e75f04d5e",
+    "speaker": "s10",
+    "transcript": "Change the temperature to 26 degrees",
+    "expected_label": "TEMPERATURE_26",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0126.wav",
+    "source_file": "audio/holdout_000126_real_voice_TEMPERATURE_V3_1_t1.wav",
+    "sha256": "4025a92533f138cb1ec30b9acba4dbdf65a62405f5ded82505e624dd5af86162",
+    "speaker": "202520785",
+    "transcript": "Set the temperature to 18 degrees",
+    "expected_label": "TEMPERATURE_18",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0127.wav",
+    "source_file": "audio/holdout_000127_group_synthetic_TEMPERATURE_18_s10_v3_clean.wav",
+    "sha256": "e87ffb680667354b12daadc264e7acb20066692d0e567042f30ed3ce1deb1ffb",
+    "speaker": "s10",
+    "transcript": "Set the temperature to 18 degrees",
+    "expected_label": "TEMPERATURE_18",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0128.wav",
+    "source_file": "audio/holdout_000128_real_voice_TEMPERATURE_V3_2_t2.wav",
+    "sha256": "9a821f9f4f9655dff489d4f26b3f8615ea361cd6e3f5c333e17da5459372eb7a",
+    "speaker": "202520785",
+    "transcript": "Set the temperature to 22 degrees",
+    "expected_label": "TEMPERATURE_22",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0129.wav",
+    "source_file": "audio/holdout_000129_group_synthetic_TEMPERATURE_22_s10_v3_clean.wav",
+    "sha256": "a958370c962d0875651d8fcc3682c68c75c8688cfe575eba23d209117e8767c5",
+    "speaker": "s10",
+    "transcript": "Set the temperature to 22 degrees",
+    "expected_label": "TEMPERATURE_22",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0130.wav",
+    "source_file": "audio/holdout_000130_real_voice_TEMPERATURE_V3_3_t2.wav",
+    "sha256": "c032faa5edf09eca17ce538bb2eabfa9084780cecf35b8f8fdcd1e6d873565f5",
+    "speaker": "202520785",
+    "transcript": "Set the temperature to 26 degrees",
+    "expected_label": "TEMPERATURE_26",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0131.wav",
+    "source_file": "audio/holdout_000131_group_synthetic_TEMPERATURE_26_s10_v3_clean.wav",
+    "sha256": "4b77f71083f4455ebaa1bcace92c943a7dc3b25c18541a2574f2e8b98fff1e12",
+    "speaker": "s10",
+    "transcript": "Set the temperature to 26 degrees",
+    "expected_label": "TEMPERATURE_26",
+    "expected_intent": "TEMPERATURE",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0132.wav",
+    "source_file": "audio/holdout_000132_real_voice_BRIGHTNESS_V1_1_t2.wav",
+    "sha256": "93c97a84357d353bcbfaf1d9f6b147db698345913338ff84ae676c9a880db012",
+    "speaker": "202520785",
+    "transcript": "Brightness 20 percent",
+    "expected_label": "BRIGHTNESS_20",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0133.wav",
+    "source_file": "audio/holdout_000133_group_synthetic_BRIGHTNESS_20_s10_v1_clean.wav",
+    "sha256": "e91a6216d1c560d15cb52f0fd2fa44549c6d1ecfdba75809053d735757ed8cb8",
+    "speaker": "s10",
+    "transcript": "Brightness 20 percent",
+    "expected_label": "BRIGHTNESS_20",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0134.wav",
+    "source_file": "audio/holdout_000134_real_voice_BRIGHTNESS_V1_2_t1.wav",
+    "sha256": "fc2107bb1ed9ac30a865177fc29f82b4ad7103e7a6e06474b258f4e939beb886",
+    "speaker": "202520785",
+    "transcript": "Brightness 60 percent",
+    "expected_label": "BRIGHTNESS_60",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0135.wav",
+    "source_file": "audio/holdout_000135_group_synthetic_BRIGHTNESS_60_s10_v1_clean.wav",
+    "sha256": "49a00875688e9b3eb28f3878ae629ed32d319d7d2716145d4caf0793c48ce3bd",
+    "speaker": "s10",
+    "transcript": "Brightness 60 percent",
+    "expected_label": "BRIGHTNESS_60",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0136.wav",
+    "source_file": "audio/holdout_000136_real_voice_BRIGHTNESS_V1_3_t1.wav",
+    "sha256": "97e4244021e3006e600a224203a12a7a5a2e8180144a3c9fb71827eeea9422cf",
+    "speaker": "202520785",
+    "transcript": "Brightness 100 percent",
+    "expected_label": "BRIGHTNESS_100",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0137.wav",
+    "source_file": "audio/holdout_000137_group_synthetic_BRIGHTNESS_100_s10_v1_clean.wav",
+    "sha256": "ee2b5936512d7e82e238da88bf01e1020371341df2fe75947fdeae332e753168",
+    "speaker": "s10",
+    "transcript": "Brightness 100 percent",
+    "expected_label": "BRIGHTNESS_100",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0138.wav",
+    "source_file": "audio/holdout_000138_real_voice_BRIGHTNESS_V3_1_t2.wav",
+    "sha256": "f93a47bde4902dfbb45046845ed82f2ab413592caf9184312578a96b8ceb427b",
+    "speaker": "202520785",
+    "transcript": "Change the brightness to 20 percent",
+    "expected_label": "BRIGHTNESS_20",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0139.wav",
+    "source_file": "audio/holdout_000139_group_synthetic_BRIGHTNESS_20_s10_v2_clean.wav",
+    "sha256": "68f9494d4ba559c97576866e6efccd21fba07c16ed35d133f9b97cd49284f937",
+    "speaker": "s10",
+    "transcript": "Adjust brightness to 20 percent",
+    "expected_label": "BRIGHTNESS_20",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0140.wav",
+    "source_file": "audio/holdout_000140_real_voice_BRIGHTNESS_V3_2_t2.wav",
+    "sha256": "3f48384e25ce20ba542e9e099d8d5c5fc2b0f5ebf64db2d7053fd61419f4e0d5",
+    "speaker": "202520785",
+    "transcript": "Change the brightness to 60 percent",
+    "expected_label": "BRIGHTNESS_60",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0141.wav",
+    "source_file": "audio/holdout_000141_group_synthetic_BRIGHTNESS_60_s10_v2_clean.wav",
+    "sha256": "370883e9e1011b241117ddd3b32e14bd699c085ff3a4958e17206c49f24c492c",
+    "speaker": "s10",
+    "transcript": "Adjust brightness to 60 percent",
+    "expected_label": "BRIGHTNESS_60",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0142.wav",
+    "source_file": "audio/holdout_000142_real_voice_BRIGHTNESS_V2_3_t1.wav",
+    "sha256": "a6c1efd41031931ee0597acdecd263f15a37293c3687a40a1817a6662c6b6eef",
+    "speaker": "202520785",
+    "transcript": "Set the brightness to 100 percent",
+    "expected_label": "BRIGHTNESS_100",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0143.wav",
+    "source_file": "audio/holdout_000143_group_synthetic_BRIGHTNESS_100_s10_v2_clean.wav",
+    "sha256": "73bab9b555cc470ae561e9bfa2a9e6202cdb9c5b9c9736b08e552259ac53c340",
+    "speaker": "s10",
+    "transcript": "Adjust brightness to 100 percent",
+    "expected_label": "BRIGHTNESS_100",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0144.wav",
+    "source_file": "audio/holdout_000144_group_synthetic_BRIGHTNESS_20_s10_v3_clean.wav",
+    "sha256": "3a5bc3f4e114bf0bdaa4f2170fbce7a533983db342180d9a71ceb8f77c3e6b94",
+    "speaker": "s10",
+    "transcript": "Brightness level 20 percent",
+    "expected_label": "BRIGHTNESS_20",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0145.wav",
+    "source_file": "audio/holdout_000145_group_synthetic_BRIGHTNESS_20_s100_v3_clean.wav",
+    "sha256": "f01b78ee703d94cf878d525c04e8cfefb1c896c55d9c004a1b54a96687406137",
+    "speaker": "s100",
+    "transcript": "Brightness level 20 percent",
+    "expected_label": "BRIGHTNESS_20",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0146.wav",
+    "source_file": "audio/holdout_000146_group_synthetic_BRIGHTNESS_60_s10_v3_clean.wav",
+    "sha256": "ebe90e2dce0af047678b5f5b1e43e5b5934e871b143e17e725128687e957aa02",
+    "speaker": "s10",
+    "transcript": "Brightness level 60 percent",
+    "expected_label": "BRIGHTNESS_60",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0147.wav",
+    "source_file": "audio/holdout_000147_group_synthetic_BRIGHTNESS_60_s100_v3_clean.wav",
+    "sha256": "f89fe7485f7f00e0a06493b9634325469d6c10c05813a30c086ce88d6d79a53f",
+    "speaker": "s100",
+    "transcript": "Brightness level 60 percent",
+    "expected_label": "BRIGHTNESS_60",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0148.wav",
+    "source_file": "audio/holdout_000148_group_synthetic_BRIGHTNESS_100_s10_v3_clean.wav",
+    "sha256": "db88e2a01458dbda8b186b2e1553b761bb11406d40602d0b88d815df1b3406bf",
+    "speaker": "s10",
+    "transcript": "Brightness level 100 percent",
+    "expected_label": "BRIGHTNESS_100",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0149.wav",
+    "source_file": "audio/holdout_000149_group_synthetic_BRIGHTNESS_100_s100_v3_clean.wav",
+    "sha256": "59c1427aa80261d37ff068d2a4c7fdea8b1f2b0c1aa3f3d9402433fa0077958b",
+    "speaker": "s100",
+    "transcript": "Brightness level 100 percent",
+    "expected_label": "BRIGHTNESS_100",
+    "expected_intent": "BRIGHTNESS",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0150.wav",
+    "source_file": "audio/holdout_000150_real_voice_COLOR_V2_1_t2.wav",
+    "sha256": "0fb7ba9fb8de7b8de7bf0a992642cadabe0ed77382b5456a4d53b10ef435740e",
+    "speaker": "202520785",
+    "transcript": "Change the lights to Red",
+    "expected_label": "COLOR_RED",
+    "expected_intent": "COLOR",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0151.wav",
+    "source_file": "audio/holdout_000151_group_synthetic_COLOR_RED_s10_v1_clean.wav",
+    "sha256": "092bdcb7de0b874a260fa394e9c5c19fc11884c5c1f04c3ceea8a4c89fbda8c3",
+    "speaker": "s10",
+    "transcript": "Change color to red",
+    "expected_label": "COLOR_RED",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0152.wav",
+    "source_file": "audio/holdout_000152_real_voice_COLOR_V2_2_t2.wav",
+    "sha256": "76a6fe6828a0e3e59b988c50f31a7569589159f0671a2fb7728b2c19d499d175",
+    "speaker": "202520785",
+    "transcript": "Change the lights to Blue",
+    "expected_label": "COLOR_BLUE",
+    "expected_intent": "COLOR",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0153.wav",
+    "source_file": "audio/holdout_000153_group_synthetic_COLOR_BLUE_s10_v1_clean.wav",
+    "sha256": "013c84e5c1413c52135e21b06e05e8a3e3ce6a00dfaf725c504f146be31727e1",
+    "speaker": "s10",
+    "transcript": "Change color to blue",
+    "expected_label": "COLOR_BLUE",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0154.wav",
+    "source_file": "audio/holdout_000154_real_voice_COLOR_V2_3_t2.wav",
+    "sha256": "7a97e916ff00f5db5cf5ac1246ba5caa20f4deb4bb5ca9c3e8782d95f514d04e",
+    "speaker": "202520785",
+    "transcript": "Change the lights to Green",
+    "expected_label": "COLOR_GREEN",
+    "expected_intent": "COLOR",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0155.wav",
+    "source_file": "audio/holdout_000155_group_synthetic_COLOR_GREEN_s10_v1_clean.wav",
+    "sha256": "2257c4f532d51ad8f1fa11ca4b09e192f2a3bd34fc4b86cc8e00466760c2adc2",
+    "speaker": "s10",
+    "transcript": "Change color to green",
+    "expected_label": "COLOR_GREEN",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0156.wav",
+    "source_file": "audio/holdout_000156_group_synthetic_COLOR_RED_s10_v2_clean.wav",
+    "sha256": "8bea1025bdc08aab1b59b20346d8c22bd160a4a82bb32d237e322076b442e5c2",
+    "speaker": "s10",
+    "transcript": "Switch color to red",
+    "expected_label": "COLOR_RED",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0157.wav",
+    "source_file": "audio/holdout_000157_group_synthetic_COLOR_RED_s100_v2_clean.wav",
+    "sha256": "c01dbcfd941932071e7f6c9169c9cbb5ddae133a1ccdfb7fbbc9e5ea5c73a831",
+    "speaker": "s100",
+    "transcript": "Switch color to red",
+    "expected_label": "COLOR_RED",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0158.wav",
+    "source_file": "audio/holdout_000158_group_synthetic_COLOR_BLUE_s10_v2_clean.wav",
+    "sha256": "91ffc04d3f5aac84b8eaee6ead0afd5a760219ee04b4f3ecefff4f5303b7388c",
+    "speaker": "s10",
+    "transcript": "Switch color to blue",
+    "expected_label": "COLOR_BLUE",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0159.wav",
+    "source_file": "audio/holdout_000159_group_synthetic_COLOR_BLUE_s100_v2_clean.wav",
+    "sha256": "ad61e9ee8f8a6da126f5e79690afce1b6d40a8d539d1448e94902c07cbd660d7",
+    "speaker": "s100",
+    "transcript": "Switch color to blue",
+    "expected_label": "COLOR_BLUE",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0160.wav",
+    "source_file": "audio/holdout_000160_group_synthetic_COLOR_GREEN_s10_v2_clean.wav",
+    "sha256": "433ab6e800b556e294f35b873095e17d834c761503a8c6c4470d7c8d5a84064b",
+    "speaker": "s10",
+    "transcript": "Switch color to green",
+    "expected_label": "COLOR_GREEN",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0161.wav",
+    "source_file": "audio/holdout_000161_group_synthetic_COLOR_GREEN_s100_v2_clean.wav",
+    "sha256": "b92685d87a5499b5b170a480323ca86f157702573613ef8823a370ab07857d0d",
+    "speaker": "s100",
+    "transcript": "Switch color to green",
+    "expected_label": "COLOR_GREEN",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0162.wav",
+    "source_file": "audio/holdout_000162_real_voice_COLOR_V1_1_t2.wav",
+    "sha256": "9b2507d79135fb70c5716821bff3bbd6bfd23f1533a84fabdf85b5f60e19c7d5",
+    "speaker": "202520785",
+    "transcript": "Color Red",
+    "expected_label": "COLOR_RED",
+    "expected_intent": "COLOR",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0163.wav",
+    "source_file": "audio/holdout_000163_group_synthetic_COLOR_RED_s10_v3_clean.wav",
+    "sha256": "92221c01624dd09d5b65668f1795f7dc441a037cc44ab07d296f48819c794c80",
+    "speaker": "s10",
+    "transcript": "Set color to red",
+    "expected_label": "COLOR_RED",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0164.wav",
+    "source_file": "audio/holdout_000164_real_voice_COLOR_V1_2_t2.wav",
+    "sha256": "73cb54ef89d98f73df93cee96f88332936cca22ced509d95927c1b4276712931",
+    "speaker": "202520785",
+    "transcript": "Color Blue",
+    "expected_label": "COLOR_BLUE",
+    "expected_intent": "COLOR",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0165.wav",
+    "source_file": "audio/holdout_000165_group_synthetic_COLOR_BLUE_s10_v3_clean.wav",
+    "sha256": "1c574dbd34626c0d91e03867b04a5f4e4bf3e602583ec6719e81dd7354e24b77",
+    "speaker": "s10",
+    "transcript": "Set color to blue",
+    "expected_label": "COLOR_BLUE",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0166.wav",
+    "source_file": "audio/holdout_000166_real_voice_COLOR_V3_3_t2.wav",
+    "sha256": "a8b0204698472d056dba05cfaa26da26d4447202aff627f3407d53c826df2f0e",
+    "speaker": "202520785",
+    "transcript": "Set the lights to Green",
+    "expected_label": "COLOR_GREEN",
+    "expected_intent": "COLOR",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0167.wav",
+    "source_file": "audio/holdout_000167_group_synthetic_COLOR_GREEN_s10_v3_clean.wav",
+    "sha256": "fd25035adcfbf76aec9772b3dccb07462383ac3f2df57fc765fd91e5468e126b",
+    "speaker": "s10",
+    "transcript": "Set color to green",
+    "expected_label": "COLOR_GREEN",
+    "expected_intent": "COLOR",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0168.wav",
+    "source_file": "audio/holdout_000168_real_voice_CREATE_REMINDER_V1_1_t2.wav",
+    "sha256": "e6c58b5274b43014ed75ec99b835ffb7d6061586cfcfc8b7fac6216667096c18",
+    "speaker": "202520785",
+    "transcript": "Reminder Drink water",
+    "expected_label": "CREATE_REMINDER_DRINK_WATER",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0169.wav",
+    "source_file": "audio/holdout_000169_group_synthetic_CREATE_REMINDER_DRINK_WATER_s10_v1_clean.wav",
+    "sha256": "6e5814cd6726b2ecba0421ac14a567934d0a7fe57bd5f9be9af7df2f3b349a27",
+    "speaker": "s10",
+    "transcript": "Reminder drink water",
+    "expected_label": "CREATE_REMINDER_DRINK_WATER",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0170.wav",
+    "source_file": "audio/holdout_000170_real_voice_CREATE_REMINDER_V1_2_t2.wav",
+    "sha256": "852e5d47f43b50305cfcd52ecf2640b87b44d168383e5dcb0f48afe31b17ce2f",
+    "speaker": "202520785",
+    "transcript": "Reminder Study",
+    "expected_label": "CREATE_REMINDER_STUDY",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0171.wav",
+    "source_file": "audio/holdout_000171_group_synthetic_CREATE_REMINDER_STUDY_s10_v1_clean.wav",
+    "sha256": "022ee13876ecaf2194f07cbcf1e3a448f5157fae7640a7a7886a70090d46fafd",
+    "speaker": "s10",
+    "transcript": "Reminder study",
+    "expected_label": "CREATE_REMINDER_STUDY",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0172.wav",
+    "source_file": "audio/holdout_000172_real_voice_CREATE_REMINDER_V1_3_t2.wav",
+    "sha256": "882b2866c250c1a324f37c284a4029f411580b299daab14fad8e5bdb33d6efb0",
+    "speaker": "202520785",
+    "transcript": "Reminder Exercise",
+    "expected_label": "CREATE_REMINDER_EXERCISE",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0173.wav",
+    "source_file": "audio/holdout_000173_group_synthetic_CREATE_REMINDER_EXERCISE_s10_v1_clean.wav",
+    "sha256": "56f8dfeee146f7f94e6dffff1ae55422f5e275769391b6d3f3a786ba1c15fdca",
+    "speaker": "s10",
+    "transcript": "Reminder exercise",
+    "expected_label": "CREATE_REMINDER_EXERCISE",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0174.wav",
+    "source_file": "audio/holdout_000174_real_voice_CREATE_REMINDER_V2_1_t2.wav",
+    "sha256": "82423e14528b84605490d9eaea8fc3ac1f4add1ccab4046981f001b816aa0598",
+    "speaker": "202520785",
+    "transcript": "Remind me to Drink water",
+    "expected_label": "CREATE_REMINDER_DRINK_WATER",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0175.wav",
+    "source_file": "audio/holdout_000175_group_synthetic_CREATE_REMINDER_DRINK_WATER_s10_v2_clean.wav",
+    "sha256": "1e3a504ecc6341b92fb2cbb25e62c338877f00d67f9973d9e61b7d395ba757d2",
+    "speaker": "s10",
+    "transcript": "Remind me to drink water",
+    "expected_label": "CREATE_REMINDER_DRINK_WATER",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0176.wav",
+    "source_file": "audio/holdout_000176_real_voice_CREATE_REMINDER_V2_2_t2.wav",
+    "sha256": "7866b97f57db6a86f971ed709327576a8187d5446c15f547db24f0ce59f4b15a",
+    "speaker": "202520785",
+    "transcript": "Remind me to Study",
+    "expected_label": "CREATE_REMINDER_STUDY",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0177.wav",
+    "source_file": "audio/holdout_000177_group_synthetic_CREATE_REMINDER_STUDY_s10_v2_clean.wav",
+    "sha256": "10c519c88d5e691658177f7d145ea8875365e0a6f0138ba84d12e91c9ba94c7c",
+    "speaker": "s10",
+    "transcript": "Remind me to study",
+    "expected_label": "CREATE_REMINDER_STUDY",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0178.wav",
+    "source_file": "audio/holdout_000178_real_voice_CREATE_REMINDER_V2_3_t2.wav",
+    "sha256": "3f826a030d091214f73dde40a05310f1186895d754dff78eb708644395a3e1fa",
+    "speaker": "202520785",
+    "transcript": "Remind me to Exercise",
+    "expected_label": "CREATE_REMINDER_EXERCISE",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0179.wav",
+    "source_file": "audio/holdout_000179_group_synthetic_CREATE_REMINDER_EXERCISE_s10_v2_clean.wav",
+    "sha256": "ed75af3079bfd791bece333f088030e07e5d148f218d77ba67171d69ef5cb225",
+    "speaker": "s10",
+    "transcript": "Remind me to exercise",
+    "expected_label": "CREATE_REMINDER_EXERCISE",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0180.wav",
+    "source_file": "audio/holdout_000180_real_voice_CREATE_REMINDER_V3_1_t2.wav",
+    "sha256": "b258341191d439cf9f0824a9cdf5edd47d999cf9fff84bf7fffffa797097e361",
+    "speaker": "202520785",
+    "transcript": "Create a reminder to Drink water",
+    "expected_label": "CREATE_REMINDER_DRINK_WATER",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0181.wav",
+    "source_file": "audio/holdout_000181_group_synthetic_CREATE_REMINDER_DRINK_WATER_s10_v3_clean.wav",
+    "sha256": "d564e76fe918619f0a25d7728984fd101fa773b20c74f25a4894aa065621055a",
+    "speaker": "s10",
+    "transcript": "Create a reminder to drink water",
+    "expected_label": "CREATE_REMINDER_DRINK_WATER",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0182.wav",
+    "source_file": "audio/holdout_000182_real_voice_CREATE_REMINDER_V3_2_t1.wav",
+    "sha256": "10c1fbd742f80e2e08982be9803ab6bcf6446f974891232f6d75cbbcc9f16bc0",
+    "speaker": "202520785",
+    "transcript": "Create a reminder to Study",
+    "expected_label": "CREATE_REMINDER_STUDY",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0183.wav",
+    "source_file": "audio/holdout_000183_group_synthetic_CREATE_REMINDER_STUDY_s10_v3_clean.wav",
+    "sha256": "a316c79bfefd033c19ec90949de97878837bcd1cf2e055143ba50a03c21e66b8",
+    "speaker": "s10",
+    "transcript": "Create a reminder to study",
+    "expected_label": "CREATE_REMINDER_STUDY",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0184.wav",
+    "source_file": "audio/holdout_000184_real_voice_CREATE_REMINDER_V3_3_t2.wav",
+    "sha256": "c15632c9c1034464c0a816462cdc77c1133d24756f54297d99ca55a4fad3f02b",
+    "speaker": "202520785",
+    "transcript": "Create a reminder to Exercise",
+    "expected_label": "CREATE_REMINDER_EXERCISE",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0185.wav",
+    "source_file": "audio/holdout_000185_group_synthetic_CREATE_REMINDER_EXERCISE_s10_v3_clean.wav",
+    "sha256": "aeab927efe37738f783222b2166ff92bfb953de263d75f92c297ed03656430fb",
+    "speaker": "s10",
+    "transcript": "Create a reminder to exercise",
+    "expected_label": "CREATE_REMINDER_EXERCISE",
+    "expected_intent": "CREATE_REMINDER",
+    "phrase_matched": true
+  },
+  {
+    "path": "audio/0186.wav",
+    "source_file": "audio/holdout_000186_CommonVoice_en_common_voice_en_36827091.wav",
+    "sha256": "c1dcbc43f4a4a0125b3c9f77e83ab1b200eb8c297756d3f46f6d48107b0371b3",
+    "speaker": "0365b018a15ab96510f1368f4910554f97f6c278320e780c89e4989e9fdef0e557feb655cc9a89282ab0b8effbf5c920cf83193d6e0536e03d2ea84c6dca7559",
+    "transcript": "They first met while both studying at University College Dublin.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0187.wav",
+    "source_file": "audio/holdout_000187_CommonVoice_en_common_voice_en_36827090.wav",
+    "sha256": "3a3dd9df2f8352f8c4e765cc98f68f61ac3e428c0126edbd270a83c638deaeee",
+    "speaker": "0365b018a15ab96510f1368f4910554f97f6c278320e780c89e4989e9fdef0e557feb655cc9a89282ab0b8effbf5c920cf83193d6e0536e03d2ea84c6dca7559",
+    "transcript": "Then they scrambled round the rocks to the other side of the house.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0188.wav",
+    "source_file": "audio/holdout_000188_CommonVoice_en_common_voice_en_36827090.wav",
+    "sha256": "3a3dd9df2f8352f8c4e765cc98f68f61ac3e428c0126edbd270a83c638deaeee",
+    "speaker": "0365b018a15ab96510f1368f4910554f97f6c278320e780c89e4989e9fdef0e557feb655cc9a89282ab0b8effbf5c920cf83193d6e0536e03d2ea84c6dca7559",
+    "transcript": "Then they scrambled round the rocks to the other side of the house.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0189.wav",
+    "source_file": "audio/holdout_000189_FluentSpeechCommands_2f3a53d0-4551-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "cbf5bef3360fbd90e66bfc465690ff07846cf0dbabaf7b05e5c79661ae4e0752",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Kitchen heat up",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0190.wav",
+    "source_file": "audio/holdout_000190_FluentSpeechCommands_b47bcab0-4551-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "1524cf59f3cc6e4b25b368193c82ea0ef088e8534fcaa93be73a412f64408437",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Decrease the heating",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0191.wav",
+    "source_file": "audio/holdout_000191_FluentSpeechCommands_ed52eb60-4552-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "adb3c321e21696a2f65eb2529c9da4d833d46bf7a0bb8ba281d1b3f9d04cb69b",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Set language to Chinese",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0192.wav",
+    "source_file": "audio/holdout_000192_FluentSpeechCommands_2d281d00-454e-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "06b81075d0582012c3a148f542c45c4df8195df72325c38d48425f8983dcc337",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Go get me some juice",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0193.wav",
+    "source_file": "audio/holdout_000193_FluentSpeechCommands_ae8530f0-4552-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "f7a2c8200375b1ca5f4d6a276295e0eb96984d2cf074bd034780b6ecde270c5a",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Fetch my socks",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0194.wav",
+    "source_file": "audio/holdout_000194_FluentSpeechCommands_26c856a0-454e-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "472e0c569e04a21f5e07c0888c0ae05bf2100d7d5602f5430c92bea1af53d801",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "Bring some juice",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0195.wav",
+    "source_file": "audio/holdout_000195_FluentSpeechCommands_27f33ee0-454a-11e9-aa52-bf2189a03a60.wav",
+    "sha256": "4b028445d62ff7b967858bf105bf5a7ba6be0406047a6b1f17ab0ebc176ff4b3",
+    "speaker": "R3mXwwoaX9IoRVKe",
+    "transcript": "More heat",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0196.wav",
+    "source_file": "audio/holdout_000196_group_synthetic_oos_OOS_s10_098_clean.wav",
+    "sha256": "652e9a8aa14a8d307a0afdf0f74ec078ee9705c89b1816c3f87687fd671a5a7b",
+    "speaker": "s10",
+    "transcript": "Open the garage door.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0197.wav",
+    "source_file": "audio/holdout_000197_group_synthetic_oos_OOS_s10_099_noisy.wav",
+    "sha256": "e4aa537418e50ce39e26f9dd234337cfb03ab5064f5741abfff833ed0e39cfa2",
+    "speaker": "s10",
+    "transcript": "My sister is visiting next month.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0198.wav",
+    "source_file": "audio/holdout_000198_group_synthetic_oos_OOS_s10_100_clean.wav",
+    "sha256": "cce8e459d49e30dda4dce9b2d0a8de6e6be3440cd9e7493d4b334a3aad456d39",
+    "speaker": "s10",
+    "transcript": "Book a table for two tonight.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0199.wav",
+    "source_file": "audio/holdout_000199_group_synthetic_oos_OOS_s100_101_noisy.wav",
+    "sha256": "109a329352d4b90c28756e0edb1d0b27e40d8a415d5cd02f76330a83d24d908e",
+    "speaker": "s100",
+    "transcript": "Start the washing machine.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0200.wav",
+    "source_file": "audio/holdout_000200_group_synthetic_oos_OOS_s100_102_clean.wav",
+    "sha256": "8a0c64b9846c3a13df9e4f40a094eb9ca3d35a4bbf73a8acb49b15209d4b5515",
+    "speaker": "s100",
+    "transcript": "Find flights to Cebu.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  },
+  {
+    "path": "audio/0201.wav",
+    "source_file": "audio/holdout_000201_group_synthetic_oos_OOS_s100_103_noisy.wav",
+    "sha256": "53ec551f70ef534556a62b4ac2dd904a1a516b9d3f8920dbff1a8a274aa5d8c8",
+    "speaker": "s100",
+    "transcript": "We're going to the beach on Saturday.",
+    "expected_label": "OUT_OF_SCOPE",
+    "expected_intent": "OUT_OF_SCOPE",
+    "phrase_matched": false
+  }
+]

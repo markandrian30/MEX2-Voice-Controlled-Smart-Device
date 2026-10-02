@@ -1,0 +1,38 @@
+{
+  "counts": {
+    "train": {
+      "recordings": 15430,
+      "hf_recordings": 316,
+      "command_speakers": 182
+    },
+    "val": {
+      "recordings": 1982,
+      "hf_recordings": 176,
+      "command_speakers": 37
+    },
+    "test": {
+      "recordings": 1670,
+      "hf_recordings": 56,
+      "command_speakers": 33
+    }
+  },
+  "manifest_sha256": "e9302b1d2e3f7031a30e379857175ce7c38e9c3ef09507d1b18d1bd041528920",
+  "hf_candidates_sha256": "a6e14da62b198fbc83325abd4fb2b2a2bd500b46c73b951a2b85bf9687731681",
+  "hf_revision": "6947f13073e57eb6ae67e7e2fc3680700b82aa13",
+  "hf_candidates": 615,
+  "hf_protected_holdout": 67,
+  "hf_retained": 548,
+  "holdout_speakers": [
+    "0365b018a15ab96510f1368f4910554f97f6c278320e780c89e4989e9fdef0e557feb655cc9a89282ab0b8effbf5c920cf83193d6e0536e03d2ea84c6dca7559",
+    "202520785",
+    "R3mXwwoaX9IoRVKe",
+    "s10",
+    "s100"
+  ],
+  "holdout_policy": "protect",
+  "controls": "include",
+  "phrase_count": 93,
+  "matching": "Normalized exact transcript, command and slot value; exclude HF filenames represented in GitHub inventory",
+  "split_policy": "Preserve existing command speaker assignments; controls training only",
+  "source_manifest_sha256": "ba2172bdfd00fefa73fcc8702377cdba69adedbea7958badb9d524a9b57b5ab8"
+}
