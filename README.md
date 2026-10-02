@@ -12,7 +12,10 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Place `music/` and `responses/` beside `main.py`. Say **Hello Kibo before each command**; **Sagittarius** to exit. Accepts confidence **above 25%**; otherwise says "Command not recognized" during an active command session. Enable I2C for the OLED.
+- Place `music/` and `responses/` beside `main.py`.
+- Say **Hello Kibo before each command**; **Sagittarius** to exit.
+- Accepts confidence **above 30%**; otherwise says "Command not recognized" during an active command session.
+- Enable I2C for the OLED.
 
 ## Submission details
 

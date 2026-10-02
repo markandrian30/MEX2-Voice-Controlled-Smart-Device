@@ -1388,10 +1388,10 @@ def main():
                     probs = logits.softmax(1)[0]
                     confidence, index = probs.max(0)
                     label = checkpoint['labels'][index.item()]
-                    # Accept only predictions strictly above 25% confidence.
-                    if confidence <= 0.25:
+                    # Accept only predictions strictly above 30% confidence.
+                    if confidence <= 0.30:
                         if active_at_start:
-                            print(f'[REJECTED] {label} | Confidence: {confidence.item():.1%} | Requires >25%', flush=True)
+                            print(f'[REJECTED] {label} | Confidence: {confidence.item():.1%} | Requires >30%', flush=True)
                             print('[RESPONSE] Command not recognized.', flush=True)
                             play_response('NOT_RECOGNIZED')
                             session.complete()
