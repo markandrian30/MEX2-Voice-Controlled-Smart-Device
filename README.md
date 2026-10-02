@@ -30,12 +30,13 @@ python main.py
 
 ![Model and example hardware](docs/Picture1.png)
 
-- **Architecture:** CNN + bidirectional GRU
-- **CNN:** 3 convolutional blocks; 3 x 3 kernels; 32, 64, 128 filters
-- **GRU:** 64 hidden units per direction
-- **Dropout:** 0.25
-- **Parameters:** 515,937
-- **Outputs:** 33 classes (31 commands + wake/exit)
+- **Architecture:** A CRNN combines a CNN for audio feature extraction with a bidirectional GRU for learning patterns across the spoken command.
+- **Audio input:** Variable-length mono audio at 16 kHz is converted to 64-band log-mel spectrograms, normalized per recording, using a 25 ms window and 10 ms hop.
+- **CNN:** Three convolutional blocks use 3 x 3 kernels and 32, 64, and 128 filters. Each block applies LayerNorm, ReLU, and 2 x 2 max pooling.
+- **Bidirectional GRU:** 64 hidden units per direction process 1,024 features per time step. The final forward and backward states form a 128-dimensional representation.
+- **Classifier:** Dropout of 0.25 and a linear layer produce 33 class scores; softmax converts them to probabilities. The model has **515,937 trainable parameters**.
+- **Command outputs:** 31 command classes cover 19 intents, with slot values encoded in the labels. Two additional classes recognize **Hello Kibo** and **Sagittarius**.
+- **On-device prediction:** The model classifies a complete detected utterance on the Raspberry Pi. The live app requires a wake phrase before each command and accepts confidence **above 30%**.
 
 ## 2. Dataset
 
