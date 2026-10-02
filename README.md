@@ -1,10 +1,10 @@
-# Voice Command Module - CRNN
+# Voice Controlled Smart Device
 
 ## Run
 
 ```bash
-git clone https://github.com/markandrian30/vcm-crnn.git
-cd vcm-crnn
+git clone https://github.com/markandrian30/MEX2-Voice-Controlled-Smart-Device.git
+cd MEX2-Voice-Controlled-Smart-Device
 sudo apt install -y ffmpeg espeak-ng libportaudio2
 python3 -m venv .venv
 source .venv/bin/activate
@@ -21,7 +21,7 @@ python main.py
 
 | Item | Location / details |
 |---|---|
-| GitHub | [markandrian30/vcm-crnn](https://github.com/markandrian30/vcm-crnn) - public - [MIT code licence](LICENSE) |
+| GitHub | [markandrian30/MEX2-Voice-Controlled-Smart-Device](https://github.com/markandrian30/MEX2-Voice-Controlled-Smart-Device) - public - [MIT code licence](LICENSE) |
 | Dataset | [Hugging Face source](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands) - [Command manifest](data/command_manifest.csv) - [Full training manifest](data/full_manifest.csv). Source access terms apply; licence/DOI verification pending. |
 | A100 cluster | DGX2 (`ai-n002`) - 1 x A100-SXM4, 40 GB (GPU 2) - seed 42 |
 | Model weights | [Selected checkpoint](model/best_model.pt) - weights licence pending |
