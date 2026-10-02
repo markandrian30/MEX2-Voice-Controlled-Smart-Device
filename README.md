@@ -90,33 +90,25 @@ Main dataset: [airimonda/ai231-me2-voice-commands](https://huggingface.co/datase
 
 ## 4. Validation on Raspberry Pi 5
 
-Direct-file inference, confidence **above 25%**.
-
-**Full holdout - 202 recordings**
+**Pre-recorded audio validation**
 
 | Item | Value |
 |---|---|
-| Command / intent accuracy | **81.19% / 82.18%** |
-| False-accept rate | **12.5% (2/16)** |
-| Inference p95 / mean RTF | **58.79 ms / 0.01159** |
+| Command / intent accuracy | **83.66% / 84.65%** |
+| False-accept rate | **18.75% (3/16)** |
+| Inference p95 / mean RTF | **56.46 ms / 0.01144** |
 | Runtime | PyTorch - 4 threads - Raspberry Pi 5 |
 
-**Exact phrase-matched holdout - 183 recordings (167 matched + 16 out-of-scope)**
+**Live voice validation**
 
 | Item | Value |
 |---|---|
-| Command / intent accuracy | **86.89% / 87.98%** |
-| False-accept rate | **12.5% (2/16)** |
-| Inference p95 / mean RTF | **58.79 ms / 0.01161** |
+| Command / intent accuracy | **71.56% / 71.56%** |
+| False-accept rate | **31.25% (5/16)** |
+| Inference p95 / mean RTF | **44.51 ms / 0.02176** |
 | Runtime | PyTorch - 4 threads - Raspberry Pi 5 |
 
-```bash
-python benchmark.py --min-confidence 0.25
-```
-
-Accuracy includes correct out-of-scope rejections. Timing covers features + inference (median of 3 passes; 10 warmups), excluding microphone, wake detection and device actions. [Detailed results](reports/pi).
-
-Exploratory evaluation: the threshold was chosen using earlier holdout results. Holdout speakers are excluded from command training, but `s10`/`s100` occur in auxiliary wake/exit training.
+Recorded at >30% confidence: [pre-recorded](reports/pi/prerecorded-best/metrics.json) uses `best` (202 clips); [live](reports/pi/live-20261002-205133/metrics.json) uses `crnn_1` (109 wake-prefixed + 16 no-wake trials). These are separate checkpoints from the bundled model. Live results are provisional: 78 extra events were logged.
 
 ## Reviewer checklist
 
@@ -126,5 +118,5 @@ Exploratory evaluation: the threshold was chosen using earlier holdout results. 
 | Dataset licence + DOI | Pending verification |
 | Training logs + checkpoint | [Included](reports/training) |
 | Pi timing | Measured on Pi 5; Pi 4 not tested |
-| Unseen speakers | Command split protected; auxiliary control overlap noted above |
+| Unseen speakers | Bundled model: command split protected; auxiliary wake/exit speakers overlap holdout |
 | Comparable-size baseline | Pending |

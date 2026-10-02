@@ -1,0 +1,295 @@
+{
+  "recordings": 202,
+  "in_scope": 186,
+  "out_of_scope": 16,
+  "model_sha256": "3c1dda5806f0b0f1a265dccd5400a3b399b2b9fdc873a91d8c97d8ea60c823c6",
+  "source": {
+    "url": "https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands/resolve/main/data/holdout-00000-of-00001.parquet",
+    "parquet_sha256": "c36227c81eee4eac63de62cee94631ee9e73952ccf8e16c27912eb049508eb6e"
+  },
+  "device": "Raspberry Pi 5 Model B Rev 1.1",
+  "threads": 4,
+  "in_scope_intent_correct": 158,
+  "in_scope_intent_accuracy": 0.8494623655913979,
+  "in_scope_joint_correct": 156,
+  "in_scope_joint_accuracy": 0.8387096774193549,
+  "out_of_scope_predictions": {
+    "LIGHT_OFF": 1,
+    "OUT_OF_SCOPE": 13,
+    "TIME": 1,
+    "VOLUME_UP": 1
+  },
+  "out_of_scope_command_outputs": 3,
+  "out_of_scope_note": "Predictions at or below min_confidence are rejected as OUT_OF_SCOPE. Raw predictions retained in CSV.",
+  "pipeline_mean_ms": 35.83943083168043,
+  "pipeline_p95_ms": 56.462469649943614,
+  "timing_scope": "Median of three log-mel + model + softmax passes per file after ten warmups; excludes file loading, microphone, wake gating, VAD and actions.",
+  "intent_metrics": {
+    "n": 186,
+    "accuracy": 0.8494623655913979,
+    "accuracy_ci95": [
+      0.7910323126873562,
+      0.8937491050840913
+    ],
+    "balanced_accuracy": 0.8187134502923977,
+    "macro_precision": 0.9383458646616541,
+    "macro_recall": 0.8187134502923977,
+    "macro_f1": 0.8596150034312001,
+    "macro_f2": 0.831774482888591,
+    "false_accept_rate": NaN,
+    "false_accept_ci95": [
+      NaN,
+      NaN
+    ],
+    "false_accepts": 0,
+    "n_out_of_scope": 0,
+    "false_reject_rate": 0.0,
+    "misfire_rate": 0.15053763440860216,
+    "per_class": {
+      "ALARM": {
+        "support": 18,
+        "precision": 1.0,
+        "recall": 0.9444444444444444,
+        "f1": 0.9714285714285714,
+        "f2": 0.9550561797752809
+      },
+      "BRIGHTNESS": {
+        "support": 18,
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1": 0.9411764705882353,
+        "f2": 0.9090909090909091
+      },
+      "CALL": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "f2": 0.7142857142857142
+      },
+      "COLOR": {
+        "support": 18,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "f2": 0.7142857142857142
+      },
+      "CREATE_REMINDER": {
+        "support": 18,
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1": 0.9411764705882353,
+        "f2": 0.9090909090909091
+      },
+      "LIGHT_OFF": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "f2": 0.7142857142857142
+      },
+      "LIGHT_ON": {
+        "support": 6,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "f2": 0.9375
+      },
+      "LIST_REMINDERS": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "f2": 0.8620689655172415
+      },
+      "MESSAGE": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "f2": 0.5555555555555556
+      },
+      "NEXT": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "f2": 0.8620689655172415
+      },
+      "PAUSE": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "f2": 0.8620689655172415
+      },
+      "PLAY_MUSIC": {
+        "support": 6,
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153,
+        "f2": 0.6451612903225806
+      },
+      "STOP": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "f2": 0.5555555555555556
+      },
+      "TEMPERATURE": {
+        "support": 18,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f2": 1.0
+      },
+      "TIME": {
+        "support": 6,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "f2": 0.9375
+      },
+      "TIMER": {
+        "support": 18,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "f2": 0.9782608695652175
+      },
+      "VOLUME_DOWN": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "f2": 0.8620689655172415
+      },
+      "VOLUME_UP": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "f2": 0.8620689655172415
+      },
+      "WEATHER": {
+        "support": 6,
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923,
+        "f2": 0.9677419354838709
+      }
+    },
+    "confusions": [
+      [
+        [
+          "MESSAGE",
+          "OUT_OF_SCOPE"
+        ],
+        3
+      ],
+      [
+        [
+          "PLAY_MUSIC",
+          "OUT_OF_SCOPE"
+        ],
+        2
+      ],
+      [
+        [
+          "STOP",
+          "PLAY_MUSIC"
+        ],
+        2
+      ],
+      [
+        [
+          "BRIGHTNESS",
+          "OUT_OF_SCOPE"
+        ],
+        2
+      ],
+      [
+        [
+          "COLOR",
+          "TIME"
+        ],
+        2
+      ],
+      [
+        [
+          "COLOR",
+          "OUT_OF_SCOPE"
+        ],
+        2
+      ],
+      [
+        [
+          "CREATE_REMINDER",
+          "OUT_OF_SCOPE"
+        ],
+        2
+      ],
+      [
+        [
+          "LIGHT_OFF",
+          "OUT_OF_SCOPE"
+        ],
+        1
+      ],
+      [
+        [
+          "LIGHT_OFF",
+          "LIGHT_ON"
+        ],
+        1
+      ],
+      [
+        [
+          "PAUSE",
+          "PLAY_MUSIC"
+        ],
+        1
+      ],
+      [
+        [
+          "STOP",
+          "OUT_OF_SCOPE"
+        ],
+        1
+      ],
+      [
+        [
+          "NEXT",
+          "OUT_OF_SCOPE"
+        ],
+        1
+      ],
+      [
+        [
+          "VOLUME_UP",
+          "OUT_OF_SCOPE"
+        ],
+        1
+      ],
+      [
+        [
+          "VOLUME_DOWN",
+          "TIMER"
+        ],
+        1
+      ],
+      [
+        [
+          "CALL",
+          "OUT_OF_SCOPE"
+        ],
+        1
+      ]
+    ]
+  },
+  "min_confidence": 0.3,
+  "out_of_scope_false_accepts": 3,
+  "out_of_scope_false_accept_rate": 0.1875,
+  "in_scope_rejected": 17
+}
