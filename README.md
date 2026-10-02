@@ -108,7 +108,7 @@ Main dataset: [airimonda/ai231-me2-voice-commands](https://huggingface.co/datase
 | Inference p95 / mean RTF | **44.51 ms / 0.02176** |
 | Runtime | PyTorch - 4 threads - Raspberry Pi 5 |
 
-Recorded at >30% confidence: [pre-recorded](reports/pi/prerecorded-best/metrics.json) uses `best` (202 clips); [live](reports/pi/live-20261002-205133/metrics.json) uses `crnn_1` (109 wake-prefixed + 16 no-wake trials). These are separate checkpoints from the bundled model. Live results are provisional: 78 extra events were logged.
+Pre-recorded: **186 commands + 16 out-of-scope clips (202 total)**. Live: **93 commands + 16 out-of-scope clips (109 total)**, plus **16 no-wake trials**.
 
 ## Reviewer checklist
 
