@@ -15,7 +15,48 @@ python main.py
 - Place `music/` and `responses/` beside `main.py`.
 - Say **Hello Kibo before each command**; **Sagittarius** to exit.
 - Accepts confidence **above 30%**; otherwise says "Command not recognized" during an active command session.
-- Enable I2C for the OLED.
+- **Hardware:** Raspberry Pi 5 with a suitable power supply, USB microphone, and USB speaker (or a powered speaker through a USB audio adapter).
+- **LEDs:** Connect separate red, green, and blue LEDs on a breadboard, each with a 330-ohm series resistor and jumper wires, as shown below.
+- **Display:** Connect a 3.3 V-compatible SSD1306 128 x 64 I2C OLED at address `0x3C`. Enable I2C using `sudo raspi-config`.
+
+### Hardware wiring
+
+Power off the Pi before wiring. Pin numbers below are physical header pins; GPIO labels use BCM numbering.
+
+```mermaid
+flowchart LR
+    MIC[USB microphone] -->|USB| PI[Raspberry Pi 5]
+    PI -->|USB audio| SPK[USB speaker / audio adapter]
+    PSU[Pi power supply] -->|USB-C power| PI
+
+    subgraph HEADER[Pi 40-pin header]
+        VCC[3.3 V - pin 1]
+        SDA[GPIO2 / SDA - pin 3]
+        SCL[GPIO3 / SCL - pin 5]
+        GND[GND - pin 6]
+        R[GPIO17 - pin 11]
+        G[GPIO27 - pin 13]
+        B[GPIO22 - pin 15]
+    end
+
+    subgraph OLED[SSD1306 OLED - I2C 0x3C]
+        OV[VCC]
+        OD[SDA]
+        OC[SCL]
+        OG[GND]
+    end
+    VCC --- OV
+    SDA --- OD
+    SCL --- OC
+    GND --- OG
+
+    R --- RR[330 ohm] --- RL[Red LED: anode + to cathode -]
+    G --- GR[330 ohm] --- GL[Green LED: anode + to cathode -]
+    B --- BR[330 ohm] --- BL[Blue LED: anode + to cathode -]
+    RL --- GND
+    GL --- GND
+    BL --- GND
+```
 
 ## Submission details
 
