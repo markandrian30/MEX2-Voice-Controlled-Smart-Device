@@ -40,7 +40,9 @@ python main.py
 
 ## 2. Dataset
 
-Main dataset: [airimonda/ai231-me2-voice-commands](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands). **Preprocessing matched command phrases and slot values, removed HF filenames already represented in GitHub, and reserved command holdout speakers.** GitHub synthetic recordings are included.
+- **Main dataset:** [airimonda/ai231-me2-voice-commands](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands).
+- **Preprocessing:** Matched command phrases and slot values, removed HF filenames already represented in GitHub, and reserved command holdout speakers.
+- **Synthetic recordings:** GitHub synthetic recordings are included.
 
 | Split | GitHub | HF | Total |
 |---|---:|---:|---:|
@@ -49,7 +51,9 @@ Main dataset: [airimonda/ai231-me2-voice-commands](https://huggingface.co/datase
 | Test | 1,614 | 56 | 1,670 |
 | **Total** | **17,490** | **548** | **18,038** |
 
-**8.90 hours - 252 command speaker IDs - 19 intents - 31 command classes.** Another 1,044 wake/exit recordings are training-only. Of 615 eligible HF candidates, 67 were reserved for holdout.
+- **Dataset size:** 8.90 hours, 252 command speaker IDs, 19 intents, and 31 command classes.
+- **Wake/exit recordings:** Another 1,044 recordings are training-only.
+- **HF selection:** Of 615 eligible candidates, 67 were reserved for holdout.
 
 **Command schema** - 13 fixed intents + 6 slotted intents; 3 phrase variations per command class.
 
