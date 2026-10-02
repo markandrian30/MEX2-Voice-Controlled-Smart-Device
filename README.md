@@ -18,7 +18,7 @@ Place your `music/` and `responses/` folders beside `main.py`. Say **Hello Kibo*
 
 ## 1. Model
 
-![Model and example hardware](docs/model.png)
+![Model and example hardware](docs/Picture1.png)
 
 **CNN + bidirectional GRU:** 128 hidden units per direction, dropout 0.35, 987,873 parameters. The current checkpoint has **33 outputs**: 31 commands + wake/exit (correcting the image’s output count).
 
