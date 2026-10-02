@@ -115,7 +115,8 @@ Main dataset: [airimonda/ai231-me2-voice-commands](https://huggingface.co/datase
 | Inference p95 / mean RTF | **44.51 ms / 0.02176** |
 | Runtime | PyTorch - 4 threads - Raspberry Pi 5 |
 
-Pre-recorded: **186 commands + 16 out-of-scope clips (202 total)**. Live: **93 commands + 16 out-of-scope clips (109 total)**, plus **16 no-wake trials**.
+- Pre-recorded: **186 commands + 16 out-of-scope clips (202 total)**.
+- Live: **93 commands + 16 out-of-scope clips (109 total)**, plus **16 no-wake trials**.
 
 ## Reviewer checklist
 
