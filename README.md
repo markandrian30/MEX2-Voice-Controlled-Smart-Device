@@ -27,7 +27,7 @@ Place `music/` and `responses/` beside `main.py`. Say **Hello Kibo before each c
 
 ![Model and example hardware](docs/Picture1.png)
 
-**CNN + bidirectional GRU:** 64 hidden units per direction, dropout 0.25, **515,937 parameters**, 33 outputs (31 commands + wake/exit). The illustration shows a larger GRU variant; these are the bundled model's settings.
+**CNN + bidirectional GRU:** 64 hidden units per direction, dropout 0.25, **515,937 parameters**, 33 outputs (31 commands + wake/exit). Diagram corrections: reshape is 128 x 8; classifier is 128 -> 33; outputs are 31 commands + wake/exit. The alarm example is ALARM_6_00AM; wake phrase is Hello Kibo.
 
 ## 2. Dataset
 
@@ -41,6 +41,34 @@ Main dataset: [airimonda/ai231-me2-voice-commands](https://huggingface.co/datase
 | **Total** | **17,490** | **548** | **18,038** |
 
 **8.90 hours - 252 command speaker IDs - 19 intents - 31 command classes.** Another 1,044 wake/exit recordings are training-only. Of 615 eligible HF candidates, 67 were reserved for holdout.
+
+**Command schema** - 13 fixed intents + 6 slotted intents; 3 phrase variations per command class.
+
+| Intent | Phrase variations | Slot values |
+|---|---|---|
+| ALARM | Alarm {time}; Wake me up at {time}; Set an alarm for {time} | 6 AM, 8 AM, 9 PM |
+| BRIGHTNESS | Brightness {percent}; Adjust brightness to {percent}; Brightness level {percent} | 100 percent, 20 percent, 60 percent |
+| CALL | Call; Make a call; Make a phone call | - |
+| COLOR | Change color to {color}; Switch color to {color}; Set color to {color} | blue, green, red |
+| CREATE_REMINDER | Reminder {task}; Remind me to {task}; Create a reminder to {task} | drink water, exercise, study |
+| LIGHT_OFF | Lights out; Kill the lights; Shut off the lights | - |
+| LIGHT_ON | Lights on; Power on the lights; Turn on the lights | - |
+| LIST_REMINDERS | Reminders; Show my reminders; List my reminders | - |
+| MESSAGE | Message; Send a message; Send my message | - |
+| NEXT | Next Song; Skip song; Play next song | - |
+| PAUSE | Pause; Pause audio; Pause song | - |
+| PLAY_MUSIC | Play Music; Start music; Play some music | - |
+| STOP | Stop; Stop playing; End playback | - |
+| TEMPERATURE | Temperature {degrees}; Change the temperature to {degrees}; Set the temperature to {degrees} | 18 degrees, 22 degrees, 26 degrees |
+| TIME | Time; What time is it?; Tell me the time | - |
+| TIMER | Timer {duration}; Countdown for {duration}; Start a timer for {duration} | 10 seconds, 1 minute, 30 seconds |
+| VOLUME_DOWN | Volume down; Lower the volume; Turn the volume down | - |
+| VOLUME_UP | Volume up; Increase the volume; Turn the volume up | - |
+| WEATHER | Weather; What's the weather?; Tell me the weather | - |
+
+**Controls:** wake: `Hello Kibo`; exit: `Sagittarius`. Slots are encoded in the command label.
+
+[Complete schema (93 phrases)](data/command_schema.csv) - [Recorded phrase spellings](reports/training/phrases.csv). Matching normalizes case, punctuation and time notation (e.g. 8:00 AM = 8 AM).
 
 ## 3. Training on A100
 

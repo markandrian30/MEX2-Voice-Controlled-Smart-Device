@@ -1,0 +1,94 @@
+intent,label,variation,phrase,slot,slot_value
+ALARM,ALARM_6_00AM,v1,Alarm 6 AM,time,6 AM
+ALARM,ALARM_6_00AM,v2,Wake me up at 6 AM,time,6 AM
+ALARM,ALARM_6_00AM,v3,Set an alarm for 6 AM,time,6 AM
+ALARM,ALARM_8_00AM,v1,Alarm 8 AM,time,8 AM
+ALARM,ALARM_8_00AM,v2,Wake me up at 8 AM,time,8 AM
+ALARM,ALARM_8_00AM,v3,Set an alarm for 8 AM,time,8 AM
+ALARM,ALARM_9_00PM,v1,Alarm 9 PM,time,9 PM
+ALARM,ALARM_9_00PM,v2,Wake me up at 9 PM,time,9 PM
+ALARM,ALARM_9_00PM,v3,Set an alarm for 9 PM,time,9 PM
+BRIGHTNESS,BRIGHTNESS_100,v1,Brightness 100 percent,percent,100 percent
+BRIGHTNESS,BRIGHTNESS_100,v2,Adjust brightness to 100 percent,percent,100 percent
+BRIGHTNESS,BRIGHTNESS_100,v3,Brightness level 100 percent,percent,100 percent
+BRIGHTNESS,BRIGHTNESS_20,v1,Brightness 20 percent,percent,20 percent
+BRIGHTNESS,BRIGHTNESS_20,v2,Adjust brightness to 20 percent,percent,20 percent
+BRIGHTNESS,BRIGHTNESS_20,v3,Brightness level 20 percent,percent,20 percent
+BRIGHTNESS,BRIGHTNESS_60,v1,Brightness 60 percent,percent,60 percent
+BRIGHTNESS,BRIGHTNESS_60,v2,Adjust brightness to 60 percent,percent,60 percent
+BRIGHTNESS,BRIGHTNESS_60,v3,Brightness level 60 percent,percent,60 percent
+CALL,CALL,v1,Call,,
+CALL,CALL,v2,Make a call,,
+CALL,CALL,v3,Make a phone call,,
+COLOR,COLOR_BLUE,v1,Change color to blue,color,blue
+COLOR,COLOR_BLUE,v2,Switch color to blue,color,blue
+COLOR,COLOR_BLUE,v3,Set color to blue,color,blue
+COLOR,COLOR_GREEN,v1,Change color to green,color,green
+COLOR,COLOR_GREEN,v2,Switch color to green,color,green
+COLOR,COLOR_GREEN,v3,Set color to green,color,green
+COLOR,COLOR_RED,v1,Change color to red,color,red
+COLOR,COLOR_RED,v2,Switch color to red,color,red
+COLOR,COLOR_RED,v3,Set color to red,color,red
+CREATE_REMINDER,CREATE_REMINDER_DRINK_WATER,v1,Reminder Drink water,task,drink water
+CREATE_REMINDER,CREATE_REMINDER_DRINK_WATER,v2,Remind me to Drink water,task,drink water
+CREATE_REMINDER,CREATE_REMINDER_DRINK_WATER,v3,Create a reminder to Drink water,task,drink water
+CREATE_REMINDER,CREATE_REMINDER_EXERCISE,v1,Reminder Exercise,task,exercise
+CREATE_REMINDER,CREATE_REMINDER_EXERCISE,v2,Remind me to Exercise,task,exercise
+CREATE_REMINDER,CREATE_REMINDER_EXERCISE,v3,Create a reminder to Exercise,task,exercise
+CREATE_REMINDER,CREATE_REMINDER_STUDY,v1,Reminder Study,task,study
+CREATE_REMINDER,CREATE_REMINDER_STUDY,v2,Remind me to Study,task,study
+CREATE_REMINDER,CREATE_REMINDER_STUDY,v3,Create a reminder to Study,task,study
+LIGHT_OFF,LIGHT_OFF,v1,Lights out,,
+LIGHT_OFF,LIGHT_OFF,v2,Kill the lights,,
+LIGHT_OFF,LIGHT_OFF,v3,Shut off the lights,,
+LIGHT_ON,LIGHT_ON,v1,Lights on,,
+LIGHT_ON,LIGHT_ON,v2,Power on the lights,,
+LIGHT_ON,LIGHT_ON,v3,Turn on the lights,,
+LIST_REMINDERS,LIST_REMINDERS,v1,Reminders,,
+LIST_REMINDERS,LIST_REMINDERS,v2,Show my reminders,,
+LIST_REMINDERS,LIST_REMINDERS,v3,List my reminders,,
+MESSAGE,MESSAGE,v1,Message,,
+MESSAGE,MESSAGE,v2,Send a message,,
+MESSAGE,MESSAGE,v3,Send my message,,
+NEXT,NEXT,v1,Next Song,,
+NEXT,NEXT,v2,Skip song,,
+NEXT,NEXT,v3,Play next song,,
+PAUSE,PAUSE,v1,Pause,,
+PAUSE,PAUSE,v2,Pause audio,,
+PAUSE,PAUSE,v3,Pause song,,
+PLAY_MUSIC,PLAY_MUSIC,v1,Play Music,,
+PLAY_MUSIC,PLAY_MUSIC,v2,Start music,,
+PLAY_MUSIC,PLAY_MUSIC,v3,Play some music,,
+STOP,STOP,v1,Stop,,
+STOP,STOP,v2,Stop playing,,
+STOP,STOP,v3,End playback,,
+TEMPERATURE,TEMPERATURE_18,v1,Temperature 18 degrees,degrees,18 degrees
+TEMPERATURE,TEMPERATURE_18,v2,Change the temperature to 18 degrees,degrees,18 degrees
+TEMPERATURE,TEMPERATURE_18,v3,Set the temperature to 18 degrees,degrees,18 degrees
+TEMPERATURE,TEMPERATURE_22,v1,Temperature 22 degrees,degrees,22 degrees
+TEMPERATURE,TEMPERATURE_22,v2,Change the temperature to 22 degrees,degrees,22 degrees
+TEMPERATURE,TEMPERATURE_22,v3,Set the temperature to 22 degrees,degrees,22 degrees
+TEMPERATURE,TEMPERATURE_26,v1,Temperature 26 degrees,degrees,26 degrees
+TEMPERATURE,TEMPERATURE_26,v2,Change the temperature to 26 degrees,degrees,26 degrees
+TEMPERATURE,TEMPERATURE_26,v3,Set the temperature to 26 degrees,degrees,26 degrees
+TIME,TIME,v1,Time,,
+TIME,TIME,v2,What time is it?,,
+TIME,TIME,v3,Tell me the time,,
+TIMER,TIMER_10s,v1,Timer 10 seconds,duration,10 seconds
+TIMER,TIMER_10s,v2,Countdown for 10 seconds,duration,10 seconds
+TIMER,TIMER_10s,v3,Start a timer for 10 seconds,duration,10 seconds
+TIMER,TIMER_1m,v1,Timer 1 minute,duration,1 minute
+TIMER,TIMER_1m,v2,Countdown for 1 minute,duration,1 minute
+TIMER,TIMER_1m,v3,Start a timer for 1 minute,duration,1 minute
+TIMER,TIMER_30s,v1,Timer 30 seconds,duration,30 seconds
+TIMER,TIMER_30s,v2,Countdown for 30 seconds,duration,30 seconds
+TIMER,TIMER_30s,v3,Start a timer for 30 seconds,duration,30 seconds
+VOLUME_DOWN,VOLUME_DOWN,v1,Volume down,,
+VOLUME_DOWN,VOLUME_DOWN,v2,Lower the volume,,
+VOLUME_DOWN,VOLUME_DOWN,v3,Turn the volume down,,
+VOLUME_UP,VOLUME_UP,v1,Volume up,,
+VOLUME_UP,VOLUME_UP,v2,Increase the volume,,
+VOLUME_UP,VOLUME_UP,v3,Turn the volume up,,
+WEATHER,WEATHER,v1,Weather,,
+WEATHER,WEATHER,v2,What's the weather?,,
+WEATHER,WEATHER,v3,Tell me the weather,,
