@@ -1,0 +1,9 @@
+{
+  "gpu_count": 1,
+  "gpu_index": 2,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "tuning_start": "2026-10-02T14:37:43+08:00",
+  "tuning_end": "2026-10-02T18:55:04+08:00",
+  "estimated_gpu_hours": 4.289074,
+  "method": "Elapsed time between search.json and best_config.json modification timestamps; 16 sequential trials; excludes GPU waiting and final evaluation."
+}

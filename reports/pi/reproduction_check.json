@@ -2,28 +2,28 @@
   "min_confidence": 0.25,
   "threads": 4,
   "runtime": "2.14.0+cpu",
-  "model_sha256": "3c1dda5806f0b0f1a265dccd5400a3b399b2b9fdc873a91d8c97d8ea60c823c6",
+  "model_sha256": "6c2ad366e5ce7079df125074fdb43505f263550f9c98854ec4ce2a904d7c6485",
   "full": {
     "recordings": 202,
-    "command_accuracy": 0.8366336633663366,
-    "intent_accuracy": 0.8465346534653465,
-    "false_accepts": 4,
+    "command_accuracy": 0.8118811881188119,
+    "intent_accuracy": 0.8217821782178217,
+    "false_accepts": 2,
     "out_of_scope": 16,
-    "false_accept_rate": 0.25,
-    "valid_rejections": 15,
-    "pipeline_p95_ms": 56.60723349951695,
-    "mean_rtf": 0.011532271019846349
+    "false_accept_rate": 0.125,
+    "false_rejections": 25,
+    "pipeline_p95_ms": 57.50522949961123,
+    "mean_rtf": 0.011517264357911899
   },
   "phrase_matched_with_oos": {
     "recordings": 183,
-    "command_accuracy": 0.9016393442622951,
-    "intent_accuracy": 0.912568306010929,
-    "false_accepts": 4,
+    "command_accuracy": 0.8688524590163934,
+    "intent_accuracy": 0.8797814207650273,
+    "false_accepts": 2,
     "out_of_scope": 16,
-    "false_accept_rate": 0.25,
-    "valid_rejections": 8,
-    "pipeline_p95_ms": 56.597280399728334,
-    "mean_rtf": 0.011563965870231781
+    "false_accept_rate": 0.125,
+    "false_rejections": 17,
+    "pipeline_p95_ms": 57.500024999626476,
+    "mean_rtf": 0.011535881454624477
   },
   "timing": "Median of 3 preprocessing + forward + softmax passes per file; 10 warmups; no microphone, VAD, wake gate or actions"
 }

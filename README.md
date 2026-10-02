@@ -1,6 +1,4 @@
-# Voice Command Module — CRNN
-
-Current checkpoint: **bestsynth** (provisional).
+# Voice Command Module - CRNN
 
 ## Run
 
@@ -14,28 +12,26 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Place your `music/` and `responses/` folders beside `main.py`. Say **Hello Kibo** to start; **Sagittarius** to exit. Enable I²C for the OLED.
+Place `music/` and `responses/` beside `main.py`. Say **Hello Kibo before each command**; **Sagittarius** to exit. Accepts confidence **above 25%**; otherwise says "Command not recognized" during an active command session. Enable I2C for the OLED.
 
 ## Submission details
 
 | Item | Location / details |
 |---|---|
-| GitHub repository | [markandrian30/vcm-crnn](https://github.com/markandrian30/vcm-crnn) · public · [MIT code licence](LICENSE) |
-| Dataset location | [Hugging Face source](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands) · [Processed command manifest](data/command_manifest.csv) · [Manifest with controls](data/crnn4_full_manifest.csv) · [bestsynth training manifest](reports/training/manifest.csv). Source access terms apply; DOI/licence verification pending. |
-| A100 cluster | DGX2 (`ai-n002`) · 1 × A100-SXM4, 40 GB (GPU 6) · seed 42 · 2.68 GPU-hours reported; wall-clock unverified |
-| Model weights | [bestsynth checkpoint](model/best_model.pt) · provisional; weights licence pending |
+| GitHub | [markandrian30/vcm-crnn](https://github.com/markandrian30/vcm-crnn) - public - [MIT code licence](LICENSE) |
+| Dataset | [Hugging Face source](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands) - [Command manifest](data/command_manifest.csv) - [Full training manifest](data/full_manifest.csv). Source access terms apply; licence/DOI verification pending. |
+| A100 cluster | DGX2 (`ai-n002`) - 1 x A100-SXM4, 40 GB (GPU 2) - seed 42 |
+| Model weights | [Selected checkpoint](model/best_model.pt) - weights licence pending |
 
 ## 1. Model
 
 ![Model and example hardware](docs/Picture1.png)
 
-**CNN + bidirectional GRU:** 128 hidden units per direction, dropout 0.35, 987,873 parameters. The current checkpoint has **33 outputs**: 31 commands + wake/exit (correcting the image’s output count).
+**CNN + bidirectional GRU:** 64 hidden units per direction, dropout 0.25, **515,937 parameters**, 33 outputs (31 commands + wake/exit). The illustration shows a larger GRU variant; these are the bundled model's settings.
 
 ## 2. Dataset
 
-Main dataset: [airimonda/ai231-me2-voice-commands on Hugging Face](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands). **Preprocessing was performed** to match the command phrases and slot values, exclude overlapping source filenames, and reserve holdout speakers; GitHub synthetic recordings were also included.
-
-The following **prepared CRNN4 subset** is for the later model update; current bestsynth uses the earlier training split.
+Main dataset: [airimonda/ai231-me2-voice-commands](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands). **Preprocessing matched command phrases and slot values, removed HF filenames already represented in GitHub, and reserved command holdout speakers.** GitHub synthetic recordings are included.
 
 | Split | GitHub | HF | Total |
 |---|---:|---:|---:|
@@ -44,59 +40,63 @@ The following **prepared CRNN4 subset** is for the later model update; current b
 | Test | 1,614 | 56 | 1,670 |
 | **Total** | **17,490** | **548** | **18,038** |
 
-**8.90 hours · 252 speaker IDs · 19 intents · 31 command classes.** Counts exclude 1,044 wake/exit recordings.
+**8.90 hours - 252 command speaker IDs - 19 intents - 31 command classes.** Another 1,044 wake/exit recordings are training-only. Of 615 eligible HF candidates, 67 were reserved for holdout.
 
 ## 3. Training on A100
 
-| Item | bestsynth |
+| Item | Value |
 |---|---|
-| GPU | 1 × A100-SXM4, 40 GB (DGX2, GPU 6) |
-| Loss / optimizer | Cross-entropy, smoothing 0.05 / AdamW |
-| Train / validation / test speakers | 122 / 15 / 15 |
-| Tuning | 16 trials; selected trial 13 by validation macro F1; seed 42 |
-| GRU / dropout | 128 per direction / 0.35 |
-| Learning rate / weight decay | Initial 0.001; checkpoint 0.0005 / 0.0001 |
+| Cluster | 1 x A100-SXM4, 40 GB (GPU 2) |
+| Objective / optimiser | Cross-entropy, label smoothing 0.05 / AdamW |
+| Train / validation / test command speakers | 182 / 37 / 33 |
+| Tuning | 16 trials; trial **2** selected by validation macro F1; seed 42 |
+| GRU units per direction | Tested: 64, 128 -> **64** |
+| Dropout | Tested: 0.25, 0.35 -> **0.25** |
+| Learning rate | Tested: 0.001, 0.0005 -> initial **0.001**; checkpoint **0.0000625** |
+| Weight decay | Tested: 0.0001, 0.001 -> **0.001** |
 | LR decay / early stopping | Halve after 4 / stop after 10 epochs without validation F1 improvement |
-| Checkpoint | Epoch 34/60; validation loss 0.1232 |
-| GPU time | 2.68 A100 GPU-hours (author-reported) |
+| Selected checkpoint | **Epoch 57/60**; validation loss **0.2681** |
+| GPU time | **~4.29 A100 GPU-hours**, all 16 trials; estimated from saved timestamps |
 
-[Training logs and configuration](reports/training).
+[Training records](reports/training) - [Timing calculation](reports/training/timing.json).
 
 ## 4. Validation on Raspberry Pi 5
 
-Direct-file benchmark; reject confidence **below 25%**.
+Direct-file inference, confidence **above 25%**.
 
-**Full holdout — 202 recordings**
-
-| Item | Value |
-|---|---|
-| Command / intent accuracy | **83.66% / 84.65%** |
-| False-accept rate | **25% (4/16)** |
-| Inference p95 / mean RTF | **57.47 ms / 0.01166** |
-| Runtime | PyTorch · 4 threads · Raspberry Pi 5 |
-
-**Phrase-matched holdout — 183 recordings (167 commands + 16 out-of-scope)**
+**Full holdout - 202 recordings**
 
 | Item | Value |
 |---|---|
-| Command / intent accuracy | **90.16% / 91.26%** |
-| False-accept rate | **25% (4/16)** |
-| Inference p95 / mean RTF | **57.47 ms / 0.01169** |
-| Runtime | PyTorch · 4 threads · Raspberry Pi 5 |
+| Command / intent accuracy | **81.19% / 82.18%** |
+| False-accept rate | **12.5% (2/16)** |
+| Inference p95 / mean RTF | **58.79 ms / 0.01159** |
+| Runtime | PyTorch - 4 threads - Raspberry Pi 5 |
+
+**Exact phrase-matched holdout - 183 recordings (167 matched + 16 out-of-scope)**
+
+| Item | Value |
+|---|---|
+| Command / intent accuracy | **86.89% / 87.98%** |
+| False-accept rate | **12.5% (2/16)** |
+| Inference p95 / mean RTF | **58.79 ms / 0.01161** |
+| Runtime | PyTorch - 4 threads - Raspberry Pi 5 |
 
 ```bash
 python benchmark.py --min-confidence 0.25
 ```
 
-Accuracy includes correct out-of-scope rejections. Timing covers features + inference, not microphone/wake/device latency. **Exploratory results:** threshold chosen after inspecting holdout; `s10` overlaps bestsynth training speakers. [Detailed reports](reports/pi).
+Accuracy includes correct out-of-scope rejections. Timing covers features + inference (median of 3 passes; 10 warmups), excluding microphone, wake detection and device actions. [Detailed results](reports/pi).
+
+Exploratory evaluation: the threshold was chosen using earlier holdout results. Holdout speakers are excluded from command training, but `s10`/`s100` occur in auxiliary wake/exit training.
 
 ## Reviewer checklist
 
 | Item | Status |
 |---|---|
-| Public repo + one-command benchmark | Available after dependency setup; live audio assets supplied separately |
-| Dataset licence + DOI | Pending verification / DOI |
+| Public repo + benchmark command | Included; live audio assets supplied separately |
+| Dataset licence + DOI | Pending verification |
 | Training logs + checkpoint | [Included](reports/training) |
-| Pi latency reproduction | [Reproduced on Pi 5](reports/pi/reproduction_check.json); Pi 4 not tested |
-| Held-out test / unseen speakers | Saved test split included; external holdout has training-speaker overlap |
+| Pi timing | Measured on Pi 5; Pi 4 not tested |
+| Unseen speakers | Command split protected; auxiliary control overlap noted above |
 | Comparable-size baseline | Pending |

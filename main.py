@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Wake once at startup; wake for music commands; Sagittarius exits after activation."""
+"""Say Hello Kibo before each command; Sagittarius exits after activation."""
 import argparse
 from collections import deque
 from contextlib import contextmanager
@@ -271,34 +271,30 @@ class MicrophoneGate:
 
 
 class MusicCommandGate:
-    """Wake once at startup, then before each command while music plays."""
+    """Require a fresh wake phrase before every command."""
     def __init__(self, player, timeout=30.):
-        self.player = player
-        self.timeout = timeout
+        self.player, self.timeout = player, timeout
         self.deadline = None
         self.activated = False
 
     def refresh(self, now):
-        if self.deadline is not None and (
-                self.player.state != 'playing' or now >= self.deadline):
+        if self.deadline is not None and now >= self.deadline:
             self.complete()
             return True
         return False
 
     def accepts(self, now):
         self.refresh(now)
-        return self.activated and (self.player.state != 'playing' or self.deadline is not None)
+        return self.activated
 
     def wake(self, now):
-        self.refresh(now)
         self.activated = True
-        if self.player.state == 'playing':
-            self.deadline = now + self.timeout
-            self.player.set_ducked(True)
-            return True
-        return False
+        self.deadline = now + self.timeout
+        self.player.set_ducked(self.player.state == 'playing')
+        return True
 
     def complete(self):
+        self.activated = False
         self.deadline = None
         self.player.set_ducked(False)
 
@@ -1120,6 +1116,7 @@ def main():
                  if (label == 'WAKE' or (label not in MUSIC_COMMANDS and
                      label in {name.upper() for name in checkpoint['labels']}))
                  and response_available(label, args.responses_dir / filename)}
+    responses['NOT_RECOGNIZED'] = read_response(args.responses_dir / 'NOT_RECOGNIZED/command_not_recognized.wav')
     if 'MESSAGE' in responses:
         responses['MESSAGE_SENT'] = read_response(args.responses_dir / 'MESSAGE/message_sent_check_telegram.wav')
     player = MusicPlayer(args.music_dir, args.music_volume)
@@ -1151,23 +1148,11 @@ def main():
     music_reminder_shown = False
     startup_prompt_shown = False
     def listening_prompt():
-        nonlocal music_reminder_shown, startup_prompt_shown
         session.refresh(time.monotonic())
-        waiting_for_wake = session.activated and player.state == 'playing' and session.deadline is None
-        if waiting_for_wake:
-            if not music_reminder_shown:
-                print(f'\nMusic is playing. Say {WAKE_PROMPT} before the next command.', flush=True)
-            music_reminder_shown = True
-            return
-        music_reminder_shown = False
-        if not session.activated:
-            if not startup_prompt_shown:
-                print(f'Say {WAKE_PROMPT} to activate.', flush=True)
-                startup_prompt_shown = True
-        elif player.state != 'playing':
-            print('\nListening for commands...', flush=True)
-        elif session.deadline is not None:
-            print('Music softened to at most 5%. Listening for one command...\n', flush=True)
+        if session.activated:
+            print('Listening for one command...', flush=True)
+        else:
+            print('\nSay HELLO KIBO before each command.', flush=True)
 
     def clear_audio_queue():
         while True:
@@ -1403,6 +1388,17 @@ def main():
                     probs = logits.softmax(1)[0]
                     confidence, index = probs.max(0)
                     label = checkpoint['labels'][index.item()]
+                    # Accept only predictions strictly above 25% confidence.
+                    if confidence <= 0.25:
+                        if active_at_start:
+                            print(f'[REJECTED] {label} | Confidence: {confidence.item():.1%} | Requires >25%', flush=True)
+                            print('[RESPONSE] Command not recognized.', flush=True)
+                            play_response('NOT_RECOGNIZED')
+                            session.complete()
+                            latency = float(player._stream.latency) if player._stream is not None else 0.
+                            microphone_gate.reset(settle=latency + .25)
+                        listening_prompt()
+                        continue
                     # Ignore legacy wake predictions defensively.
                     if label == 'KNOCK_KNOCK':
                         continue
@@ -1420,7 +1416,7 @@ def main():
                             play_response('WAKE')
                         else:
                             clear_audio_queue()
-                        print(f'\n{WAKE_PHRASES[label].upper()} detected.', flush=True)
+                        print(f'\n{WAKE_PHRASES[label].upper()} detected.', end=' ', flush=True)
                     elif active_at_start:
                         print(f'[INPUT] {label} | Confidence: {confidence.item():.1%} | Inference Latency: {inference_ms:.2f} ms', flush=True)
                         completed = play_response(label, command=True)

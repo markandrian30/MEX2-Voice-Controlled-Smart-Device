@@ -1,6 +1,6 @@
 {
-  "dataset": "optionb",
-  "manifest_sha256": "79156436281fbd305af15d64b50ebc76b815a71754a8305dd9fd234682928ad4",
+  "dataset": "github_hf_matched_crnn4",
+  "manifest_sha256": "e9302b1d2e3f7031a30e379857175ce7c38e9c3ef09507d1b18d1bd041528920",
   "configurations": [
     {
       "hidden_size": 64,

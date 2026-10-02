@@ -1,11 +1,11 @@
 {
-  "trial": 13,
-  "hidden_size": 128,
-  "dropout": 0.35,
+  "trial": 2,
+  "hidden_size": 64,
+  "dropout": 0.25,
   "lr": 0.001,
-  "weight_decay": 0.0001,
-  "validation_accuracy_percent": 99.37467430953622,
-  "validation_macro_f1": 0.993820568487333,
-  "validation_loss": 0.12320329858462845,
-  "checkpoint_epoch": 34
+  "weight_decay": 0.001,
+  "validation_accuracy_percent": 96.31685166498485,
+  "validation_macro_f1": 0.9650590561585513,
+  "validation_loss": 0.26809919951060707,
+  "checkpoint_epoch": 57
 }

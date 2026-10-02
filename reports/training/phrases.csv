@@ -1,96 +1,145 @@
 dataset,label,phrase_id,phrase
-optionb,ALARM_6_00AM,v1,Alarm 6 AM
-optionb,ALARM_6_00AM,v2,Wake me up at 6 AM
-optionb,ALARM_6_00AM,v3,Set an alarm for 6 AM
-optionb,ALARM_8_00AM,v1,Alarm 8 AM
-optionb,ALARM_8_00AM,v2,Wake me up at 8 AM
-optionb,ALARM_8_00AM,v3,Set an alarm for 8 AM
-optionb,ALARM_9_00PM,v1,Alarm 9 PM
-optionb,ALARM_9_00PM,v2,Wake me up at 9 PM
-optionb,ALARM_9_00PM,v3,Set an alarm for 9 PM
-optionb,BRIGHTNESS_100,v1,Brightness 100 percent
-optionb,BRIGHTNESS_100,v2,Adjust brightness to 100 percent
-optionb,BRIGHTNESS_100,v3,Brightness level 100 percent
-optionb,BRIGHTNESS_20,v1,Brightness 20 percent
-optionb,BRIGHTNESS_20,v2,Adjust brightness to 20 percent
-optionb,BRIGHTNESS_20,v3,Brightness level 20 percent
-optionb,BRIGHTNESS_60,v1,Brightness 60 percent
-optionb,BRIGHTNESS_60,v2,Adjust brightness to 60 percent
-optionb,BRIGHTNESS_60,v3,Brightness level 60 percent
-optionb,CALL,v1,Call
-optionb,CALL,v2,Make a call
-optionb,CALL,v3,Make a phone call
-optionb,COLOR_BLUE,v1,Change color to blue
-optionb,COLOR_BLUE,v2,Switch color to blue
-optionb,COLOR_BLUE,v3,Set color to blue
-optionb,COLOR_GREEN,v1,Change color to green
-optionb,COLOR_GREEN,v2,Switch color to green
-optionb,COLOR_GREEN,v3,Set color to green
-optionb,COLOR_RED,v1,Change color to red
-optionb,COLOR_RED,v2,Switch color to red
-optionb,COLOR_RED,v3,Set color to red
-optionb,CREATE_REMINDER_DRINK_WATER,v1,Reminder drink water
-optionb,CREATE_REMINDER_DRINK_WATER,v2,Remind me to drink water
-optionb,CREATE_REMINDER_DRINK_WATER,v3,Create a reminder to drink water
-optionb,CREATE_REMINDER_EXERCISE,v1,Reminder exercise
-optionb,CREATE_REMINDER_EXERCISE,v2,Remind me to exercise
-optionb,CREATE_REMINDER_EXERCISE,v3,Create a reminder to exercise
-optionb,CREATE_REMINDER_STUDY,v1,Reminder study
-optionb,CREATE_REMINDER_STUDY,v2,Remind me to study
-optionb,CREATE_REMINDER_STUDY,v3,Create a reminder to study
-optionb,HELLO_KIBO,v1,Hello Kibo
-optionb,LIGHT_OFF,v1,Lights out
-optionb,LIGHT_OFF,v2,Kill the lights
-optionb,LIGHT_OFF,v3,Shut off the lights
-optionb,LIGHT_ON,v1,Lights on
-optionb,LIGHT_ON,v2,Power on the lights
-optionb,LIGHT_ON,v3,Turn on the lights
-optionb,LIST_REMINDERS,v1,Reminders
-optionb,LIST_REMINDERS,v2,Show my reminders
-optionb,LIST_REMINDERS,v3,List my reminders
-optionb,MESSAGE,v1,Message
-optionb,MESSAGE,v2,Send a message
-optionb,MESSAGE,v3,Send my message
-optionb,NEXT,v1,Next song
-optionb,NEXT,v2,Skip song
-optionb,NEXT,v3,Play next song
-optionb,PAUSE,v1,Pause
-optionb,PAUSE,v2,Pause audio
-optionb,PAUSE,v3,Pause song
-optionb,PLAY_MUSIC,v1,Play music
-optionb,PLAY_MUSIC,v2,Start music
-optionb,PLAY_MUSIC,v3,Play some music
-optionb,SAGITTARIUS,v1,Sagittarius
-optionb,STOP,v1,Stop
-optionb,STOP,v2,Stop playing
-optionb,STOP,v3,End playback
-optionb,TEMPERATURE_18,v1,Temperature 18 degrees
-optionb,TEMPERATURE_18,v2,Change the temperature to 18 degrees
-optionb,TEMPERATURE_18,v3,Set the temperature to 18 degrees
-optionb,TEMPERATURE_22,v1,Temperature 22 degrees
-optionb,TEMPERATURE_22,v2,Change the temperature to 22 degrees
-optionb,TEMPERATURE_22,v3,Set the temperature to 22 degrees
-optionb,TEMPERATURE_26,v1,Temperature 26 degrees
-optionb,TEMPERATURE_26,v2,Change the temperature to 26 degrees
-optionb,TEMPERATURE_26,v3,Set the temperature to 26 degrees
-optionb,TIME,v1,Time
-optionb,TIME,v2,What time is it?
-optionb,TIME,v3,Tell me the time
-optionb,TIMER_10s,v1,Timer 10 seconds
-optionb,TIMER_10s,v2,Countdown for 10 seconds
-optionb,TIMER_10s,v3,Start a timer for 10 seconds
-optionb,TIMER_1m,v1,Timer 1 minute
-optionb,TIMER_1m,v2,Countdown for 1 minute
-optionb,TIMER_1m,v3,Start a timer for 1 minute
-optionb,TIMER_30s,v1,Timer 30 seconds
-optionb,TIMER_30s,v2,Countdown for 30 seconds
-optionb,TIMER_30s,v3,Start a timer for 30 seconds
-optionb,VOLUME_DOWN,v1,Volume down
-optionb,VOLUME_DOWN,v2,Lower the volume
-optionb,VOLUME_DOWN,v3,Turn the volume down
-optionb,VOLUME_UP,v1,Volume up
-optionb,VOLUME_UP,v2,Increase the volume
-optionb,VOLUME_UP,v3,Turn the volume up
-optionb,WEATHER,v1,Weather
-optionb,WEATHER,v2,What's the weather?
-optionb,WEATHER,v3,Tell me the weather
+github_hf_matched_crnn4,ALARM_6_00AM,v1,Alarm 6 AM
+github_hf_matched_crnn4,ALARM_6_00AM,v1,Alarm 6:00 AM
+github_hf_matched_crnn4,ALARM_6_00AM,v2,Wake me up at 6 AM
+github_hf_matched_crnn4,ALARM_6_00AM,v2,Wake me up at 6:00 AM
+github_hf_matched_crnn4,ALARM_6_00AM,v3,Set an alarm for 6 AM
+github_hf_matched_crnn4,ALARM_6_00AM,v3,Set an alarm for 6:00 AM
+github_hf_matched_crnn4,ALARM_8_00AM,v1,Alarm 8 AM
+github_hf_matched_crnn4,ALARM_8_00AM,v2,Wake me up at 8 AM
+github_hf_matched_crnn4,ALARM_8_00AM,v2,Wake me up at 8:00 AM
+github_hf_matched_crnn4,ALARM_8_00AM,v3,Set an alarm for 8 AM
+github_hf_matched_crnn4,ALARM_8_00AM,v3,Set an alarm for 8:00 AM
+github_hf_matched_crnn4,ALARM_9_00PM,v1,Alarm 9 PM
+github_hf_matched_crnn4,ALARM_9_00PM,v1,Alarm 9:00 PM
+github_hf_matched_crnn4,ALARM_9_00PM,v2,Wake me up at 9 PM
+github_hf_matched_crnn4,ALARM_9_00PM,v2,Wake me up at 9:00 PM
+github_hf_matched_crnn4,ALARM_9_00PM,v3,Set an alarm for 9 PM
+github_hf_matched_crnn4,ALARM_9_00PM,v3,Set an alarm for 9:00 PM
+github_hf_matched_crnn4,BRIGHTNESS_100,v1,Brightness 100 percent
+github_hf_matched_crnn4,BRIGHTNESS_100,v2,Adjust brightness to 100 percent
+github_hf_matched_crnn4,BRIGHTNESS_100,v3,Brightness level 100 percent
+github_hf_matched_crnn4,BRIGHTNESS_20,v1,Brightness 20 percent
+github_hf_matched_crnn4,BRIGHTNESS_20,v2,Adjust brightness to 20 percent
+github_hf_matched_crnn4,BRIGHTNESS_20,v3,Brightness level 20 percent
+github_hf_matched_crnn4,BRIGHTNESS_60,v1,Brightness 60 percent
+github_hf_matched_crnn4,BRIGHTNESS_60,v2,Adjust brightness to 60 percent
+github_hf_matched_crnn4,BRIGHTNESS_60,v3,Brightness level 60 percent
+github_hf_matched_crnn4,CALL,v1,Call
+github_hf_matched_crnn4,CALL,v2,Make a call
+github_hf_matched_crnn4,CALL,v3,Make a phone call
+github_hf_matched_crnn4,COLOR_BLUE,v1,Change color to blue
+github_hf_matched_crnn4,COLOR_BLUE,v2,Switch color to blue
+github_hf_matched_crnn4,COLOR_BLUE,v3,Set color to blue
+github_hf_matched_crnn4,COLOR_GREEN,v1,Change color to green
+github_hf_matched_crnn4,COLOR_GREEN,v2,Switch color to green
+github_hf_matched_crnn4,COLOR_GREEN,v3,Set color to green
+github_hf_matched_crnn4,COLOR_RED,v1,Change color to red
+github_hf_matched_crnn4,COLOR_RED,v2,Switch color to red
+github_hf_matched_crnn4,COLOR_RED,v3,Set color to red
+github_hf_matched_crnn4,CREATE_REMINDER_DRINK_WATER,v1,Reminder Drink water
+github_hf_matched_crnn4,CREATE_REMINDER_DRINK_WATER,v1,Reminder drink water
+github_hf_matched_crnn4,CREATE_REMINDER_DRINK_WATER,v2,Remind me to Drink water
+github_hf_matched_crnn4,CREATE_REMINDER_DRINK_WATER,v2,Remind me to drink water
+github_hf_matched_crnn4,CREATE_REMINDER_DRINK_WATER,v3,Create a reminder to Drink water
+github_hf_matched_crnn4,CREATE_REMINDER_DRINK_WATER,v3,Create a reminder to drink water
+github_hf_matched_crnn4,CREATE_REMINDER_EXERCISE,v1,Reminder Exercise
+github_hf_matched_crnn4,CREATE_REMINDER_EXERCISE,v1,Reminder exercise
+github_hf_matched_crnn4,CREATE_REMINDER_EXERCISE,v2,Remind me to Exercise
+github_hf_matched_crnn4,CREATE_REMINDER_EXERCISE,v2,Remind me to exercise
+github_hf_matched_crnn4,CREATE_REMINDER_EXERCISE,v3,Create a reminder to Exercise
+github_hf_matched_crnn4,CREATE_REMINDER_EXERCISE,v3,Create a reminder to exercise
+github_hf_matched_crnn4,CREATE_REMINDER_STUDY,v1,Reminder Study
+github_hf_matched_crnn4,CREATE_REMINDER_STUDY,v1,Reminder study
+github_hf_matched_crnn4,CREATE_REMINDER_STUDY,v2,Remind me to Study
+github_hf_matched_crnn4,CREATE_REMINDER_STUDY,v2,Remind me to study
+github_hf_matched_crnn4,CREATE_REMINDER_STUDY,v3,Create a reminder to Study
+github_hf_matched_crnn4,CREATE_REMINDER_STUDY,v3,Create a reminder to study
+github_hf_matched_crnn4,HELLO_KIBO,v1,Hello Kibo
+github_hf_matched_crnn4,LIGHT_OFF,v1,Lights out
+github_hf_matched_crnn4,LIGHT_OFF,v1,lights out
+github_hf_matched_crnn4,LIGHT_OFF,v2,Kill the lights
+github_hf_matched_crnn4,LIGHT_OFF,v3,Shut off the lights
+github_hf_matched_crnn4,LIGHT_ON,v1,Lights on
+github_hf_matched_crnn4,LIGHT_ON,v2,Power on the lights
+github_hf_matched_crnn4,LIGHT_ON,v3,Turn on the lights
+github_hf_matched_crnn4,LIST_REMINDERS,v1,Reminders
+github_hf_matched_crnn4,LIST_REMINDERS,v1,reminders
+github_hf_matched_crnn4,LIST_REMINDERS,v2,Show my reminders
+github_hf_matched_crnn4,LIST_REMINDERS,v3,List my reminders
+github_hf_matched_crnn4,MESSAGE,v1,Message
+github_hf_matched_crnn4,MESSAGE,v2,Send a message
+github_hf_matched_crnn4,MESSAGE,v3,Send my message
+github_hf_matched_crnn4,NEXT,v1,Next Song
+github_hf_matched_crnn4,NEXT,v1,Next song
+github_hf_matched_crnn4,NEXT,v1,next song
+github_hf_matched_crnn4,NEXT,v2,Skip song
+github_hf_matched_crnn4,NEXT,v3,Play next song
+github_hf_matched_crnn4,NEXT,v3,play next song
+github_hf_matched_crnn4,PAUSE,v1,Pause
+github_hf_matched_crnn4,PAUSE,v1,pause
+github_hf_matched_crnn4,PAUSE,v2,Pause audio
+github_hf_matched_crnn4,PAUSE,v3,Pause song
+github_hf_matched_crnn4,PLAY_MUSIC,v1,Play Music
+github_hf_matched_crnn4,PLAY_MUSIC,v1,Play music
+github_hf_matched_crnn4,PLAY_MUSIC,v1,Play music.
+github_hf_matched_crnn4,PLAY_MUSIC,v1,play music
+github_hf_matched_crnn4,PLAY_MUSIC,v2,Start music
+github_hf_matched_crnn4,PLAY_MUSIC,v2,start music
+github_hf_matched_crnn4,PLAY_MUSIC,v3,Play some music
+github_hf_matched_crnn4,PLAY_MUSIC,v3,play some music
+github_hf_matched_crnn4,SAGITTARIUS,v1,Sagittarius
+github_hf_matched_crnn4,STOP,v1,Stop
+github_hf_matched_crnn4,STOP,v1,Stop!
+github_hf_matched_crnn4,STOP,v1,Stop.
+github_hf_matched_crnn4,STOP,v1,stop
+github_hf_matched_crnn4,STOP,v2,Stop playing
+github_hf_matched_crnn4,STOP,v2,stop playing
+github_hf_matched_crnn4,STOP,v3,End playback
+github_hf_matched_crnn4,TEMPERATURE_18,v1,Temperature 18 degrees
+github_hf_matched_crnn4,TEMPERATURE_18,v2,Change the temperature to 18 degrees
+github_hf_matched_crnn4,TEMPERATURE_18,v3,Set the temperature to 18 degrees
+github_hf_matched_crnn4,TEMPERATURE_22,v1,Temperature 22 degrees
+github_hf_matched_crnn4,TEMPERATURE_22,v2,Change the temperature to 22 degrees
+github_hf_matched_crnn4,TEMPERATURE_22,v3,Set the temperature to 22 degrees
+github_hf_matched_crnn4,TEMPERATURE_22,v3,Set the temperature to 22 degrees.
+github_hf_matched_crnn4,TEMPERATURE_26,v1,Temperature 26 degrees
+github_hf_matched_crnn4,TEMPERATURE_26,v2,Change the temperature to 26 degrees
+github_hf_matched_crnn4,TEMPERATURE_26,v2,Change the temperature to 26 degrees.
+github_hf_matched_crnn4,TEMPERATURE_26,v3,Set the temperature to 26 degrees
+github_hf_matched_crnn4,TEMPERATURE_26,v3,Set the temperature to 26 degrees.
+github_hf_matched_crnn4,TIME,v1,Time
+github_hf_matched_crnn4,TIME,v2,What time is it?
+github_hf_matched_crnn4,TIME,v2,what time is it
+github_hf_matched_crnn4,TIME,v3,Tell me the time
+github_hf_matched_crnn4,TIME,v3,tell me the time
+github_hf_matched_crnn4,TIMER_10s,v1,Timer 10 seconds
+github_hf_matched_crnn4,TIMER_10s,v2,Countdown for 10 seconds
+github_hf_matched_crnn4,TIMER_10s,v3,Start a timer for 10 seconds
+github_hf_matched_crnn4,TIMER_1m,v1,Timer 1 minute
+github_hf_matched_crnn4,TIMER_1m,v2,Countdown for 1 minute
+github_hf_matched_crnn4,TIMER_1m,v3,Start a timer for 1 minute
+github_hf_matched_crnn4,TIMER_1m,v3,start a timer for 1 minute
+github_hf_matched_crnn4,TIMER_30s,v1,Timer 30 seconds
+github_hf_matched_crnn4,TIMER_30s,v2,Countdown for 30 seconds
+github_hf_matched_crnn4,TIMER_30s,v3,Start a timer for 30 seconds
+github_hf_matched_crnn4,VOLUME_DOWN,v1,Volume down
+github_hf_matched_crnn4,VOLUME_DOWN,v1,Volume down.
+github_hf_matched_crnn4,VOLUME_DOWN,v1,volume down
+github_hf_matched_crnn4,VOLUME_DOWN,v2,Lower the volume
+github_hf_matched_crnn4,VOLUME_DOWN,v2,lower the volume
+github_hf_matched_crnn4,VOLUME_DOWN,v3,Turn the volume down
+github_hf_matched_crnn4,VOLUME_DOWN,v3,turn the volume down
+github_hf_matched_crnn4,VOLUME_UP,v1,Volume up
+github_hf_matched_crnn4,VOLUME_UP,v1,volume up
+github_hf_matched_crnn4,VOLUME_UP,v1,volume up.
+github_hf_matched_crnn4,VOLUME_UP,v2,Increase the volume
+github_hf_matched_crnn4,VOLUME_UP,v2,increase the volume
+github_hf_matched_crnn4,VOLUME_UP,v3,Turn the volume up
+github_hf_matched_crnn4,WEATHER,v1,Weather
+github_hf_matched_crnn4,WEATHER,v1,weather
+github_hf_matched_crnn4,WEATHER,v2,What's the weather?
+github_hf_matched_crnn4,WEATHER,v2,what's the weather
+github_hf_matched_crnn4,WEATHER,v2,what's the weather?
+github_hf_matched_crnn4,WEATHER,v3,Tell me the weather
+github_hf_matched_crnn4,WEATHER,v3,tell me the weather

@@ -12,7 +12,7 @@ def load_model(path):
     return model.eval(), checkpoint
 
 def accept(label, confidence, threshold):
-    return label if confidence >= threshold else 'OUT_OF_SCOPE'
+    return label if confidence > threshold else 'OUT_OF_SCOPE'
 
 def intent(label):
     for prefix in ('CREATE_REMINDER', 'TEMPERATURE', 'BRIGHTNESS', 'ALARM', 'TIMER', 'COLOR'):
