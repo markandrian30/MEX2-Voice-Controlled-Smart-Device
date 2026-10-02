@@ -27,7 +27,14 @@ Place `music/` and `responses/` beside `main.py`. Say **Hello Kibo before each c
 
 ![Model and example hardware](docs/Picture1.png)
 
-**CNN + bidirectional GRU:** 64 hidden units per direction, dropout 0.25, **515,937 parameters**, 33 outputs (31 commands + wake/exit). Diagram corrections: reshape is 128 x 8; classifier is 128 -> 33; outputs are 31 commands + wake/exit. The alarm example is ALARM_6_00AM; wake phrase is Hello Kibo.
+- **Architecture:** CNN + bidirectional GRU
+- **GRU:** 64 hidden units per direction
+- **Dropout:** 0.25
+- **Parameters:** 515,937
+- **Reshape:** 128 x 8 = 1,024 features per time step
+- **Classifier:** 128 -> 33
+- **Outputs:** 31 commands + wake/exit
+- **Wake phrase:** Hello Kibo
 
 ## 2. Dataset
 
