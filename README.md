@@ -63,7 +63,7 @@ flowchart LR
 | Item | Location / details |
 |---|---|
 | GitHub | [markandrian30/MEX2-Voice-Controlled-Smart-Device](https://github.com/markandrian30/MEX2-Voice-Controlled-Smart-Device) - public - [MIT code licence](LICENSE) |
-| Dataset | [Hugging Face source](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands) - [Command manifest](data/command_manifest.csv) - [Full training manifest](data/full_manifest.csv). Source access terms apply; licence/DOI verification pending. |
+| Dataset | [Hugging Face source](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands) - [DOI: 10.57967/hf/10723](https://doi.org/10.57967/hf/10723) - [Command manifest](data/command_manifest.csv) - [Full training manifest](data/full_manifest.csv). Research and education only; [per-source terms apply](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands/blob/main/LICENSE.md). |
 | A100 cluster | DGX2 (`ai-n002`) - 1 x A100-SXM4, 40 GB (GPU 2) - seed 42 |
 | Model weights | [Selected checkpoint](model/best_model.pt) - weights licence pending |
 
@@ -81,7 +81,7 @@ flowchart LR
 
 ## 2. Dataset
 
-- **Main dataset:** [airimonda/ai231-me2-voice-commands](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands).
+- **Main dataset:** [airimonda/ai231-me2-voice-commands](https://huggingface.co/datasets/airimonda/ai231-me2-voice-commands), DOI: [10.57967/hf/10723](https://doi.org/10.57967/hf/10723).
 - **Preprocessing:** Matched command phrases and slot values, removed HF filenames already represented in GitHub, and reserved command holdout speakers.
 - **Synthetic recordings:** GitHub synthetic recordings are included.
 
@@ -170,7 +170,7 @@ flowchart LR
 | Item | Status |
 |---|---|
 | Public repo + benchmark command | Included; live audio assets supplied separately |
-| Dataset licence + DOI | Pending verification |
+| Dataset licence + DOI | DOI listed; research/education only, per-source terms apply |
 | Training logs + checkpoint | [Included](reports/training) |
 | Pi timing | Measured on Pi 5; Pi 4 not tested |
 | Unseen speakers | Bundled model: command split protected; auxiliary wake/exit speakers overlap holdout |
